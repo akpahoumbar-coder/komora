@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vendor Product Catalogue</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col">
+<!-- TopAppBar -->
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex items-center p-4">
+<button class="flex size-10 shrink-0 items-center justify-center rounded-full text-zinc-900 dark:text-zinc-50">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</button>
+<h1 class="flex-1 text-center text-lg font-bold leading-tight tracking-[-0.015em] text-zinc-900 dark:text-zinc-50">Mama's Kitchen</h1>
+<div class="relative flex size-10 shrink-0 items-center justify-center">
+<button class="flex size-10 items-center justify-center rounded-full text-zinc-900 dark:text-zinc-50">
+<span class="material-symbols-outlined text-2xl">shopping_cart</span>
+</button>
+<div class="absolute -top-0.5 -right-0.5 flex size-5 items-center justify-center rounded-full bg-primary text-xs font-bold text-zinc-900">3</div>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<!-- ProfileHeader -->
+<div class="p-4 @container">
+<div class="flex w-full flex-col gap-4 @[520px]:flex-row @[520px]:items-center @[520px]:justify-between">
+<div class="flex items-center gap-4">
+<div class="aspect-square w-24 min-w-24 rounded-full bg-cover bg-center bg-no-repeat" data-alt="Mama's Kitchen logo, a stylized spoon and fork" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCYVukTBJIKnLoRmJijNTgJKRf2K5qO8vUtm0TpP4SF6-6XGtYfdKSKsWhlMqN4oNSpQ9yrQnIyFsuxS0C3xQhQ5f0I2Q1rteQHU0oKPBejZbXrf8cHsc0xgO8VClOnJ8NxYelNiGpRCXv3IoHDQp8JMmGy1ekpYuwEZ7gCQblOZzUso9cD23X1y1j7wHthh9emjuqI6J1uLJmKp9fzSMI5pK4lsWHxl71jrFkwzcNz-nKlAO2XHR7fcH6ESOwJ-N66WwsZ97aF5LXI");'></div>
+<div class="flex flex-col justify-center">
+<p class="text-xl font-bold leading-tight tracking-[-0.015em] text-zinc-900 dark:text-zinc-50">Mama's Kitchen</p>
+<p class="text-base font-normal leading-normal text-zinc-600 dark:text-zinc-400">Authentic Nigerian Cuisine</p>
+<p class="flex items-center gap-1 text-base font-normal leading-normal text-zinc-600 dark:text-zinc-400">
+<span class="material-symbols-outlined text-lg text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+                                4.8 (250 reviews)
+                            </p>
+</div>
+</div>
+<div class="flex w-full max-w-[480px] gap-3 @[480px]:w-auto">
+<button class="flex h-10 flex-1 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-lg bg-primary/20 text-sm font-bold leading-normal tracking-[0.015em] text-primary @[480px]:flex-auto">
+<span class="material-symbols-outlined text-lg">favorite</span>
+<span class="truncate">Follow</span>
+</button>
+<button class="flex h-10 flex-1 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-lg bg-primary text-sm font-bold leading-normal tracking-[0.015em] text-zinc-900 @[480px]:flex-auto">
+<span class="material-symbols-outlined text-lg">share</span>
+<span class="truncate">Share</span>
+</button>
+</div>
+</div>
+</div>
+<!-- SearchBar -->
+<div class="p-4 pt-2">
+<div class="relative flex w-full items-center">
+<span class="material-symbols-outlined pointer-events-none absolute left-4 text-zinc-500">search</span>
+<input class="form-input h-12 w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg border-zinc-200 bg-zinc-100 pl-12 text-base font-normal leading-normal text-zinc-900 placeholder:text-zinc-500 focus:border-primary focus:ring-primary dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-50 dark:placeholder:text-zinc-400" placeholder="Search in Mama's Kitchen" value=""/>
+</div>
+</div>
+<!-- Chips -->
+<div class="flex gap-3 overflow-x-auto p-4 pt-0">
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-zinc-200/50 px-3 dark:bg-zinc-800">
+<p class="text-sm font-medium leading-normal text-zinc-700 dark:text-zinc-300">Sort by: Popular</p>
+<span class="material-symbols-outlined text-xl text-zinc-500 dark:text-zinc-400">expand_more</span>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-zinc-200/50 px-3 dark:bg-zinc-800">
+<p class="text-sm font-medium leading-normal text-zinc-700 dark:text-zinc-300">Category</p>
+<span class="material-symbols-outlined text-xl text-zinc-500 dark:text-zinc-400">expand_more</span>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-zinc-200/50 px-3 dark:bg-zinc-800">
+<p class="text-sm font-medium leading-normal text-zinc-700 dark:text-zinc-300">Price</p>
+<span class="material-symbols-outlined text-xl text-zinc-500 dark:text-zinc-400">expand_more</span>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-zinc-200/50 px-3 dark:bg-zinc-800">
+<p class="text-sm font-medium leading-normal text-zinc-700 dark:text-zinc-300">Dietary</p>
+<span class="material-symbols-outlined text-xl text-zinc-500 dark:text-zinc-400">expand_more</span>
+</button>
+</div>
+<!-- ImageGrid -->
+<div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-4 p-4">
+<div class="flex flex-col gap-3">
+<div class="relative w-full overflow-hidden rounded-xl">
+<div class="aspect-square w-full bg-cover bg-center bg-no-repeat" data-alt="A bowl of vibrant red Jollof Rice" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCFtCmXtIddZ-F-Gso0hGPltld1ZnO0rUGP-0tghndP53re1QN03E2--6QCU4nlrzwkPa68TXqu8Okp5CerMgmkHY2prUI8RKHj-KEomQ6t5tzZ_fNlPIh2-Nn3xQJjJslRpbUZVnOSsZfA7A30xaSlg-P_jzgVxzEUDvLBRK01v3VTbpP0vKpEdlc3h2rJxnZtIFrTmICB9l4FQuxnoTWWnGBDb9ZfrTgCIyviyFXV02urqQ7tagFiprToMBfZoA7ro3R72LakCsyD");'></div>
+<button class="absolute top-2 right-2 flex size-8 items-center justify-center rounded-full bg-white/50 text-zinc-900 backdrop-blur-sm">
+<span class="material-symbols-outlined text-xl">favorite</span>
+</button>
+</div>
+<div class="flex items-start justify-between gap-2">
+<div>
+<p class="text-base font-bold leading-normal text-zinc-900 dark:text-zinc-50">Jollof Rice</p>
+<p class="text-sm font-normal leading-normal text-zinc-600 dark:text-zinc-400">₦1,500</p>
+</div>
+<button class="flex size-8 shrink-0 items-center justify-center rounded-full bg-primary text-zinc-900">
+<span class="material-symbols-outlined text-xl">add</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<div class="relative w-full overflow-hidden rounded-xl">
+<div class="aspect-square w-full bg-cover bg-center bg-no-repeat" data-alt="A bowl of thick, green Egusi Soup" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCteKMjKmtGYXq957GTeIX8j2LOZDhhkNl6RSMYvDM6zsR-4UPGn8CRmFLeH3RU1jleCjWoFOTg18Cg4YqGqI6V2sYt2jPgqAKZlKa9e0lD4ttMGIHyhJeA0n1M8eHX5vpWA9iFt-2raoHagVo8qLre5zJJzN_UY_ErSHrYEFYlqPk_-UnU81rO7bcq-MlFZGFnc1kptrrtKyM5tZBSnkzC786GqjTq79yl9tN_M7wSiAFYTgnP_QSi50m2n9jMfhDn5yzmgtCwoCVf");'></div>
+<button class="absolute top-2 right-2 flex size-8 items-center justify-center rounded-full bg-white/50 text-zinc-900 backdrop-blur-sm">
+<span class="material-symbols-outlined text-xl">favorite</span>
+</button>
+</div>
+<div class="flex items-start justify-between gap-2">
+<div>
+<p class="text-base font-bold leading-normal text-zinc-900 dark:text-zinc-50">Egusi Soup</p>
+<p class="text-sm font-normal leading-normal text-zinc-600 dark:text-zinc-400">₦2,000</p>
+</div>
+<button class="flex size-8 shrink-0 items-center justify-center rounded-full bg-primary text-zinc-900">
+<span class="material-symbols-outlined text-xl">add</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<div class="relative w-full overflow-hidden rounded-xl">
+<div class="aspect-square w-full bg-cover bg-center bg-no-repeat" data-alt="Grilled Suya Skewers with spices" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDfj7xYccyGCcEu1Vo6Rz9vydMn8PVEWY6K2KWs6ehLW3cHi9t3HwXljfGof7rsG5eVKI6u-koqcOPSHgvKvHp1DMOWNZjzIcKr1MMZp2IIBz1FMaCo1jrCqul3aSmqsyuApnBiKK3Tktj5zCXl-TTQUqVTIoZJ15N2f7DU57JhXHaf9QvXTdvaofLBPT52aMJzsUmQigzfsnvxEtyxiXMuM1jDw2YlVHQ1wYm0bex9BATqVuEsn_jgucg9E-siJodM3WqvXJiJwDP7");'></div>
+<button class="absolute top-2 right-2 flex size-8 items-center justify-center rounded-full bg-white/50 text-zinc-900 backdrop-blur-sm">
+<span class="material-symbols-outlined text-xl">favorite</span>
+</button>
+</div>
+<div class="flex items-start justify-between gap-2">
+<div>
+<p class="text-base font-bold leading-normal text-zinc-900 dark:text-zinc-50">Suya Skewers</p>
+<p class="text-sm font-normal leading-normal text-zinc-600 dark:text-zinc-400">₦1,200</p>
+</div>
+<button class="flex size-8 shrink-0 items-center justify-center rounded-full bg-primary text-zinc-900">
+<span class="material-symbols-outlined text-xl">add</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<div class="relative w-full overflow-hidden rounded-xl">
+<div class="aspect-square w-full bg-cover bg-center bg-no-repeat" data-alt="A serving of soft, white Pounded Yam" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDic4bpc34mZ6dDaLreBNT5MemfwMpsTMiRy26PWZIWE8Q-ATHnB1-F2EJtQG3p8g9x54uYO2BDzfLDlJXBCCJ8rJ5jq7O3GRCK11Bkx-kQIlkajR3Uj3GlRDqFGRDHc9g4nY3ZYv8K3oObtseOyAH9yYegdpvFfgM6593Qgtyd1Ln8h5VdZw_bGwm20_Hqj_9wO5CnlmuzzUWy5faxptBsQcXm4nR2SrS3RGU-bbovyS5Ggx2ArpRiN0Pupfzrr_Jdd-f15kHhIPk5");'></div>
+<button class="absolute top-2 right-2 flex size-8 items-center justify-center rounded-full bg-white/50 text-zinc-900 backdrop-blur-sm">
+<span class="material-symbols-outlined text-xl">favorite</span>
+</button>
+</div>
+<div class="flex items-start justify-between gap-2">
+<div>
+<p class="text-base font-bold leading-normal text-zinc-900 dark:text-zinc-50">Pounded Yam</p>
+<p class="text-sm font-normal leading-normal text-zinc-600 dark:text-zinc-400">₦1,800</p>
+</div>
+<button class="flex size-8 shrink-0 items-center justify-center rounded-full bg-primary text-zinc-900">
+<span class="material-symbols-outlined text-xl">add</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<div class="relative w-full overflow-hidden rounded-xl">
+<div class="aspect-square w-full bg-cover bg-center bg-no-repeat" data-alt="Golden brown fried plantain slices" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDy5UPvUVM7pq-OtL-d7Af4sMaY_hUVCMUAbrOoYaMK8lygOdJLgdbzzy8ESUSETO0GRhQz54awjAr7AiCA-3jZiCrGQl_FNa113LeUKav6fhuEbFchKHougZfv0S0MdJoklUq3gdeGkndHizV1Xp4L93L9yanEjMAomKHY-VEi0kZ6xzhFdIDENOXKOWRDxeMqzZRWcJUWmkx-Zn5yhPVJr5QumLpwOu8d10bZDOxj96yFUsmYqyU5LjjCDE87YW_Y4-ARjiiO9fhs");'></div>
+<button class="absolute top-2 right-2 flex size-8 items-center justify-center rounded-full bg-white/50 text-zinc-900 backdrop-blur-sm">
+<span class="material-symbols-outlined text-xl">favorite</span>
+</button>
+</div>
+<div class="flex items-start justify-between gap-2">
+<div>
+<p class="text-base font-bold leading-normal text-zinc-900 dark:text-zinc-50">Fried Plantain</p>
+<p class="text-sm font-normal leading-normal text-zinc-600 dark:text-zinc-400">₦800</p>
+</div>
+<button class="flex size-8 shrink-0 items-center justify-center rounded-full bg-primary text-zinc-900">
+<span class="material-symbols-outlined text-xl">add</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<div class="relative w-full overflow-hidden rounded-xl">
+<div class="aspect-square w-full bg-cover bg-center bg-no-repeat" data-alt="Crunchy, sweet Chin Chin snacks" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDRTK5R3gkrQmnAraNY60kKDBDRhgJzujXcnSsvqOHzzGo3ikBJKn0aEHkX85momhZtkx0qbHXKsBp22tG5GEZ9Eyq13VXygrWXCeKCpkLma2e5LpnwQXKte3nCrTxffJUb9f-u1PweWWUI3GNmGIKrGFPYC6OQThRbhiGAepO3BMvK25SdHIKwa7qBJ7FCyw-7aF-MIT2WW7VsvSPuRR8-PTE7MGHcv-R2XCpfmUJiAyIKdDsQLVFanYbHq9WAiWK4qB93r8aMz8zU");'></div>
+<button class="absolute top-2 right-2 flex size-8 items-center justify-center rounded-full bg-white/50 text-zinc-900 backdrop-blur-sm">
+<span class="material-symbols-outlined text-xl">favorite</span>
+</button>
+</div>
+<div class="flex items-start justify-between gap-2">
+<div>
+<p class="text-base font-bold leading-normal text-zinc-900 dark:text-zinc-50">Chin Chin</p>
+<p class="text-sm font-normal leading-normal text-zinc-600 dark:text-zinc-400">₦500</p>
+</div>
+<button class="flex size-8 shrink-0 items-center justify-center rounded-full bg-primary text-zinc-900">
+<span class="material-symbols-outlined text-xl">add</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation -->
+<nav class="sticky bottom-0 z-10 border-t border-zinc-200 bg-background-light/80 backdrop-blur-sm dark:border-zinc-800 dark:bg-background-dark/80">
+<div class="mx-auto grid h-16 max-w-md grid-cols-5 px-4">
+<button class="flex flex-col items-center justify-center gap-1 text-zinc-500 dark:text-zinc-400">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs font-medium">Home</span>
+</button>
+<button class="flex flex-col items-center justify-center gap-1 text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">storefront</span>
+<span class="text-xs font-bold">Market</span>
+</button>
+<button class="flex flex-col items-center justify-center gap-1 text-zinc-500 dark:text-zinc-400">
+<span class="material-symbols-outlined">local_shipping</span>
+<span class="text-xs font-medium">Delivery</span>
+</button>
+<button class="flex flex-col items-center justify-center gap-1 text-zinc-500 dark:text-zinc-400">
+<span class="material-symbols-outlined">account_balance_wallet</span>
+<span class="text-xs font-medium">Wallet</span>
+</button>
+<button class="flex flex-col items-center justify-center gap-1 text-zinc-500 dark:text-zinc-400">
+<span class="material-symbols-outlined">mic</span>
+<span class="text-xs font-medium">Voice</span>
+</button>
+</div>
+</nav>
+</div>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#eea62b",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#18181b", // Using zinc-900 for a darker, more modern feel
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.75rem",
+                        "xl": "1rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</body></html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Affiliate Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#d48311",
+              "background-light": "#f8f7f6",
+              "background-dark": "#221a10",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- Top App Bar -->
+<div class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10 border-b border-primary/20">
+<div class="flex size-12 shrink-0 items-center">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="User profile avatar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAzhQ6jHBpNdDDsM_cIQUM28OMOhJWyG-BB9lL7PR4_aLsaBG9IzqembKH-1sj27nkV-h-CHuNF2NUbmSEXSoqWMXKztMzPcuz1mJtjdx4EpTFBKvl8IGaO0yLjEn-lTAr7gojbzAhJ_PQR9LDRCiZudveM59ILnHrfgAAp6QXBBAGEpueTWcD_9dZjiHrnLe-tk4xoE-F4U7YHRDvJRo0Vhek4Fn_6n_MSAuETLbsLaEJU8cdB5YxHNbJgtWkqyQTRUxZXY9w8W-Px");'></div>
+</div>
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Affiliate Dashboard</h2>
+<div class="flex w-12 items-center justify-end">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 w-10 bg-transparent text-slate-900 dark:text-white gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 hover:bg-primary/20">
+<span class="material-symbols-outlined text-slate-900 dark:text-white" data-icon="Bell">notifications</span>
+</button>
+</div>
+</div>
+<main class="flex-1 flex flex-col gap-6 p-4">
+<!-- Chips: Period Selector -->
+<div class="flex gap-3 overflow-x-auto pb-2">
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary pl-4 pr-4 cursor-pointer">
+<p class="text-white text-sm font-medium leading-normal">Last 7 Days</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary/20 pl-4 pr-4 cursor-pointer">
+<p class="text-slate-900 dark:text-white text-sm font-medium leading-normal">This Month</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary/20 pl-4 pr-4 cursor-pointer">
+<p class="text-slate-900 dark:text-white text-sm font-medium leading-normal">All Time</p>
+</div>
+</div>
+<!-- Stats: Key Metric Cards -->
+<div class="grid grid-cols-2 gap-4">
+<div class="flex flex-col gap-2 rounded-xl p-4 bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-primary/20 shadow-sm">
+<p class="text-slate-600 dark:text-slate-300 text-sm font-medium leading-normal">Total Clicks</p>
+<p class="text-slate-900 dark:text-white tracking-tight text-3xl font-bold leading-tight">1,204</p>
+<p class="text-green-500 text-sm font-medium leading-normal">+12%</p>
+</div>
+<div class="flex flex-col gap-2 rounded-xl p-4 bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-primary/20 shadow-sm">
+<p class="text-slate-600 dark:text-slate-300 text-sm font-medium leading-normal">Conversions</p>
+<p class="text-slate-900 dark:text-white tracking-tight text-3xl font-bold leading-tight">82</p>
+<p class="text-green-500 text-sm font-medium leading-normal">+8%</p>
+</div>
+<div class="flex flex-col gap-2 rounded-xl p-4 bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-primary/20 shadow-sm">
+<p class="text-slate-600 dark:text-slate-300 text-sm font-medium leading-normal">Commission</p>
+<p class="text-slate-900 dark:text-white tracking-tight text-3xl font-bold leading-tight">R1,560</p>
+<p class="text-green-500 text-sm font-medium leading-normal">+15%</p>
+</div>
+<div class="flex flex-col gap-2 rounded-xl p-4 bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-primary/20 shadow-sm">
+<p class="text-slate-600 dark:text-slate-300 text-sm font-medium leading-normal">Conv. Rate</p>
+<p class="text-slate-900 dark:text-white tracking-tight text-3xl font-bold leading-tight">6.8%</p>
+<p class="text-green-500 text-sm font-medium leading-normal">+1.2%</p>
+</div>
+</div>
+<!-- Charts: Performance Chart -->
+<div class="flex flex-col gap-4 p-4 rounded-xl bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-primary/20 shadow-sm">
+<div class="flex flex-col gap-2">
+<p class="text-slate-600 dark:text-slate-300 text-base font-medium leading-normal">Commissions</p>
+<p class="text-slate-900 dark:text-white tracking-tight text-[32px] font-bold leading-tight truncate">R1,560.50</p>
+<div class="flex gap-1">
+<p class="text-slate-500 dark:text-primary/80 text-base font-normal leading-normal">Last 7 Days</p>
+<p class="text-green-500 text-base font-medium leading-normal">+15%</p>
+</div>
+</div>
+<div class="flex min-h-[180px] flex-1 flex-col gap-8 py-4">
+<svg fill="none" height="148" preserveaspectratio="none" viewbox="-3 0 478 150" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 109C18.1538 109 18.1538 21 36.3077 21C54.4615 21 54.4615 41 72.6154 41C90.7692 41 90.7692 93 108.923 93C127.077 93 127.077 33 145.231 33C163.385 33 163.385 101 181.538 101C199.692 101 199.692 61 217.846 61C236 61 236 45 254.154 45C272.308 45 272.308 121 290.462 121C308.615 121 308.615 149 326.769 149C344.923 149 344.923 1 363.077 1C381.231 1 381.231 81 399.385 81C417.538 81 417.538 129 435.692 129C453.846 129 453.846 25 472 25V149H326.769H0V109Z" fill="url(#paint0_linear_1131_5935)"></path>
+<path d="M0 109C18.1538 109 18.1538 21 36.3077 21C54.4615 21 54.4615 41 72.6154 41C90.7692 41 90.7692 93 108.923 93C127.077 93 127.077 33 145.231 33C163.385 33 163.385 101 181.538 101C199.692 101 199.692 61 217.846 61C236 61 236 45 254.154 45C272.308 45 272.308 121 290.462 121C308.615 121 308.615 149 326.769 149C344.923 149 344.923 1 363.077 1C381.231 1 381.231 81 399.385 81C417.538 81 417.538 129 435.692 129C453.846 129 453.846 25 472 25" stroke="#d48311" stroke-linecap="round" stroke-width="3"></path>
+<defs>
+<lineargradient gradientunits="userSpaceOnUse" id="paint0_linear_1131_5935" x1="236" x2="236" y1="1" y2="149">
+<stop stop-color="#d48311" stop-opacity="0.3"></stop>
+<stop offset="1" stop-color="#d48311" stop-opacity="0"></stop>
+</lineargradient>
+</defs>
+</svg>
+<div class="flex justify-around">
+<p class="text-slate-500 dark:text-slate-400 text-[13px] font-bold leading-normal tracking-[0.015em]">Mon</p>
+<p class="text-slate-500 dark:text-slate-400 text-[13px] font-bold leading-normal tracking-[0.015em]">Tue</p>
+<p class="text-slate-500 dark:text-slate-400 text-[13px] font-bold leading-normal tracking-[0.015em]">Wed</p>
+<p class="text-slate-500 dark:text-slate-400 text-[13px] font-bold leading-normal tracking-[0.015em]">Thu</p>
+<p class="text-slate-500 dark:text-slate-400 text-[13px] font-bold leading-normal tracking-[0.015em]">Fri</p>
+<p class="text-slate-500 dark:text-slate-400 text-[13px] font-bold leading-normal tracking-[0.015em]">Sat</p>
+<p class="text-slate-500 dark:text-slate-400 text-[13px] font-bold leading-normal tracking-[0.015em]">Sun</p>
+</div>
+</div>
+</div>
+<!-- Card: Affiliate Ranking -->
+<div class="@container">
+<div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start shadow-sm bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-primary/20 overflow-hidden">
+<div class="w-full h-32 bg-center bg-no-repeat bg-cover" data-alt="Abstract vibrant African textile pattern" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDlu8rTrCScOdN7rPB3OUWVX30Y2WSXtcIx2b6qeU3E8WQV75qSAq5OQm64f9ihTnMbJtud22MluzXYAV-pabnWehxYOOaUOtiaIz6tQ_3fZ_sRTj1tk3FsO_d_F0K5PgHrbq-gqAOI1l2DrZNjdhkpFFq-E1w1O-JCC6wEr1Vb5seZNUu29QeUHRvC6ZvKrR9qWroajNDxCJnhdoRvQ18h_5YYk7f7lxZvjntnoE91lMBqAul8L5fO3AVLD7KzhqyW0SXM_InHhV-6");'></div>
+<div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 p-4">
+<p class="text-slate-600 dark:text-primary/80 text-sm font-normal leading-normal">Your Rank</p>
+<p class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">You're in the Top 5%!</p>
+<div class="flex items-end gap-3 justify-between">
+<p class="text-slate-500 dark:text-slate-300 text-base font-normal leading-normal">You're only 5 conversions away from the next tier!</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Recent Activity Feed -->
+<div class="flex flex-col gap-4">
+<h3 class="text-slate-900 dark:text-white text-lg font-bold">Recent Conversions</h3>
+<div class="flex flex-col gap-3">
+<div class="flex items-center gap-4 p-3 rounded-lg bg-white dark:bg-slate-900/50">
+<div class="w-12 h-12 rounded-lg bg-cover bg-center" data-alt="Product image for wireless headphones" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAmTk63hhZCpcxXGqQ__qkHDFZPtSAZCXEq3-XWLVwiyiUYLCdyB9ihsVNgVxKrHtKa-XceA-fwB3AbtItfEaCRv77wpMqp3laIMf1JEVg8ab5Z5AMA5njYT-FbAd5cQJbjGEleF_KWaA0lIrFYawIo3m9ydv63edTV4b-JyrsranFaiVGbeFW1XlqnNybRSzc7CaIcWXiadSKl9iZlT9R_VlVIxlNRDdUU_8-szrfsoWdKhDnK2h8r0UNI_SmSknoMLK6imITQvkIg")'></div>
+<div class="flex-1">
+<p class="font-semibold text-slate-900 dark:text-white">Wireless Headphones</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">Today, 2:45 PM</p>
+</div>
+<div class="text-right">
+<p class="font-bold text-green-500">+ R25.00</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">Commission</p>
+</div>
+</div>
+<div class="flex items-center gap-4 p-3 rounded-lg bg-white dark:bg-slate-900/50">
+<div class="w-12 h-12 rounded-lg bg-cover bg-center" data-alt="Product image for a smart watch" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDBbFp1X6Zafr46GknwrfvxGN261ygTbdVOyths8Fr7zdjo5VwpJK5qNwPMS77afE7FVWZieLSfvN9pyH4dJ-4nr1orPi2GnZv311-C3gSDBTtj-DB1LXJFU2ztMAKRKHO5BkKqzwkb2dXsJIkcSjRI9ckUZ3w4fUnifqzjL6F9YqBnHpuAtnem3DqQ1iiNg-tL0yzehMZJwsefrhHvGubSwFiajVsfgRC7q4Dlx4O6qMDDFdBtza9PWVvC0vjBz-BhkwPoDjf32Q6Z")'></div>
+<div class="flex-1">
+<p class="font-semibold text-slate-900 dark:text-white">Smart Watch Series 8</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">Yesterday, 9:12 AM</p>
+</div>
+<div class="text-right">
+<p class="font-bold text-green-500">+ R70.50</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">Commission</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Links / CTA Buttons -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<button class="flex items-center justify-center gap-2 h-12 px-6 rounded-lg bg-primary text-white font-bold text-base">
+<span class="material-symbols-outlined">share</span>
+<span>Share My Link</span>
+</button>
+<button class="flex items-center justify-center gap-2 h-12 px-6 rounded-lg bg-primary/20 text-slate-900 dark:text-white font-bold text-base">
+<span class="material-symbols-outlined">analytics</span>
+<span>View Reports</span>
+</button>
+<button class="flex items-center justify-center gap-2 h-12 px-6 rounded-lg bg-primary/20 text-slate-900 dark:text-white font-bold text-base">
+<span class="material-symbols-outlined">account_balance_wallet</span>
+<span>Withdraw</span>
+</button>
+</div>
+</main>
+<!-- Bottom Navigation Bar -->
+<div class="sticky bottom-0 z-10 bg-background-light dark:bg-background-dark border-t border-primary/20 p-2">
+<div class="flex justify-around items-center">
+<button class="flex flex-col items-center gap-1 text-primary w-20">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="text-xs font-bold">Dashboard</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-slate-500 dark:text-slate-400 w-20">
+<span class="material-symbols-outlined">shopping_bag</span>
+<span class="text-xs font-medium">Market</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-slate-500 dark:text-slate-400 w-20">
+<span class="material-symbols-outlined">payments</span>
+<span class="text-xs font-medium">Invest</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-slate-500 dark:text-slate-400 w-20">
+<span class="material-symbols-outlined">person</span>
+<span class="text-xs font-medium">Profile</span>
+</button>
+</div>
+</div>
+</div>
+</body></html>

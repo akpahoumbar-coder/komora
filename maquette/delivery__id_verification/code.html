@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Courier ID Verification</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#137fec",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101922",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Top App Bar -->
+<div class="flex shrink-0 items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10">
+<div class="text-slate-800 dark:text-white flex size-10 shrink-0 items-center justify-center">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</div>
+<h1 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Verify Your Identity</h1>
+<div class="flex size-10 shrink-0 items-center"></div> <!-- Spacer -->
+</div>
+<!-- Page Indicators / Progress Bar -->
+<div class="flex w-full flex-row items-center justify-center gap-3 py-4 px-4">
+<div class="h-1 flex-1 rounded-full bg-slate-300 dark:bg-slate-700">
+<div class="h-1 w-full rounded-full bg-primary"></div>
+</div>
+<div class="h-1 flex-1 rounded-full bg-primary">
+<div class="h-1 w-1/2 rounded-full bg-primary"></div>
+</div>
+<div class="h-1 flex-1 rounded-full bg-slate-300 dark:bg-slate-700"></div>
+</div>
+<main class="flex-grow px-4">
+<!-- Headline and Body Text -->
+<h2 class="text-slate-900 dark:text-white tracking-tight text-[28px] font-bold leading-tight text-left pb-2 pt-2">Upload Your ID</h2>
+<p class="text-slate-600 dark:text-slate-400 text-base font-normal leading-normal pb-6">For security and to activate your courier account, please upload a valid government-issued ID.</p>
+<!-- Segmented Buttons for Document Type -->
+<div class="flex py-3">
+<div class="flex h-11 flex-1 items-center justify-center rounded-xl bg-slate-200 dark:bg-slate-800 p-1">
+<label class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-lg px-2 text-sm font-medium leading-normal text-slate-500 dark:text-slate-400 has-[:checked]:bg-white has-[:checked]:text-slate-900 has-[:checked]:shadow-sm dark:has-[:checked]:bg-slate-900/80 dark:has-[:checked]:text-white">
+<span class="truncate">Driver's License</span>
+<input checked="" class="invisible w-0" name="doc-type-selector" type="radio" value="Driver's License"/>
+</label>
+<label class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-lg px-2 text-sm font-medium leading-normal text-slate-500 dark:text-slate-400 has-[:checked]:bg-white has-[:checked]:text-slate-900 has-[:checked]:shadow-sm dark:has-[:checked]:bg-slate-900/80 dark:has-[:checked]:text-white">
+<span class="truncate">National ID</span>
+<input class="invisible w-0" name="doc-type-selector" type="radio" value="National ID"/>
+</label>
+<label class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-lg px-2 text-sm font-medium leading-normal text-slate-500 dark:text-slate-400 has-[:checked]:bg-white has-[:checked]:text-slate-900 has-[:checked]:shadow-sm dark:has-[:checked]:bg-slate-900/80 dark:has-[:checked]:text-white">
+<span class="truncate">Passport</span>
+<input class="invisible w-0" name="doc-type-selector" type="radio" value="Passport"/>
+</label>
+</div>
+</div>
+<!-- File Upload Components -->
+<div class="space-y-4 pt-4">
+<!-- Upload Front -->
+<div class="flex flex-col items-center justify-center rounded-xl border-2 border-dashed border-slate-300 dark:border-slate-700 bg-slate-100 dark:bg-slate-800/50 p-6 text-center">
+<div class="mb-3 flex size-12 items-center justify-center rounded-full bg-primary/20 text-primary">
+<span class="material-symbols-outlined">upload_file</span>
+</div>
+<p class="font-semibold text-slate-800 dark:text-slate-200">Upload Front of ID</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">Tap to upload a photo</p>
+</div>
+<!-- Upload Back -->
+<div class="flex flex-col items-center justify-center rounded-xl border-2 border-dashed border-slate-300 dark:border-slate-700 bg-slate-100 dark:bg-slate-800/50 p-6 text-center">
+<div class="mb-3 flex size-12 items-center justify-center rounded-full bg-primary/20 text-primary">
+<span class="material-symbols-outlined">upload_file</span>
+</div>
+<p class="font-semibold text-slate-800 dark:text-slate-200">Upload Back of ID</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">Tap to upload a photo</p>
+</div>
+</div>
+<!-- Image Quality Checklist -->
+<div class="mt-8 rounded-lg bg-slate-100 dark:bg-slate-800/50 p-4">
+<h3 class="mb-3 font-semibold text-slate-800 dark:text-slate-200">Photo Requirements</h3>
+<ul class="space-y-2 text-sm text-slate-600 dark:text-slate-300">
+<li class="flex items-center">
+<span class="material-symbols-outlined mr-2 text-green-500 text-base">check_circle</span>
+                        No glare or reflections
+                    </li>
+<li class="flex items-center">
+<span class="material-symbols-outlined mr-2 text-green-500 text-base">check_circle</span>
+                        All 4 corners are visible
+                    </li>
+<li class="flex items-center">
+<span class="material-symbols-outlined mr-2 text-green-500 text-base">check_circle</span>
+                        Photo is clear and in focus
+                    </li>
+</ul>
+</div>
+</main>
+<!-- Bottom Action Bar -->
+<div class="sticky bottom-0 mt-8 w-full bg-background-light dark:bg-background-dark p-4 pt-2">
+<button class="w-full rounded-xl bg-primary py-4 text-center text-base font-bold text-white transition-colors hover:bg-primary/90 disabled:bg-slate-300 dark:disabled:bg-slate-700 disabled:text-slate-500 dark:disabled:text-slate-400" disabled="">
+                Submit for Verification
+            </button>
+<div class="pt-4 text-center">
+<a class="text-sm font-medium text-primary hover:underline" href="#">Need Help?</a>
+</div>
+</div>
+</div>
+</body></html>

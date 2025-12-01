@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Marketplace Commission &amp; Fees</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#eea62b",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#221b10",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative min-h-screen w-full flex-col pb-24">
+<!-- Top App Bar -->
+<div class="sticky top-0 z-10 flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between">
+<div class="text-slate-800 dark:text-white flex size-12 shrink-0 items-center">
+<span class="material-symbols-outlined">arrow_back</span>
+</div>
+<h2 class="text-slate-800 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Marketplace Commission &amp; Fees</h2>
+<div class="size-12 shrink-0"></div> <!-- Spacer -->
+</div>
+<!-- Headline Text -->
+<h1 class="text-slate-900 dark:text-white tracking-light text-[32px] font-bold leading-tight px-4 text-left pb-3 pt-6">Transparent Pricing for Our Partners</h1>
+<!-- Card: Standard Commission -->
+<div class="p-4 @container">
+<div class="flex flex-col items-stretch justify-start rounded-xl bg-slate-100 dark:bg-[#332a19] shadow-sm">
+<div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-2 p-6">
+<p class="text-primary text-sm font-bold leading-tight tracking-[-0.015em]">STANDARD COMMISSION</p>
+<p class="text-slate-900 dark:text-white text-4xl font-bold leading-tight tracking-[-0.015em]">15%</p>
+<p class="text-slate-600 dark:text-[#c9b592] text-base font-normal leading-normal mt-2">Our primary commission rate, displayed clearly for all standard goods sold on the marketplace.</p>
+</div>
+</div>
+</div>
+<!-- Card: Infographic -->
+<div class="px-4 pb-4 @container">
+<div class="flex flex-col items-stretch justify-start rounded-xl bg-slate-100 dark:bg-[#332a19] shadow-sm">
+<div class="flex w-full min-w-72 grow flex-col items-center justify-center gap-4 py-6 px-4">
+<div class="flex items-center gap-2 w-full text-center">
+<div class="flex-1 flex flex-col items-center">
+<span class="text-primary text-3xl material-symbols-outlined">payments</span>
+<p class="text-slate-700 dark:text-white text-sm font-semibold mt-1">Total Sale</p>
+</div>
+<span class="text-slate-400 dark:text-[#675332] text-2xl material-symbols-outlined">arrow_forward</span>
+<div class="flex-1 flex flex-col items-center">
+<span class="text-primary text-3xl material-symbols-outlined">receipt_long</span>
+<p class="text-slate-700 dark:text-white text-sm font-semibold mt-1">Our Commission</p>
+</div>
+<span class="text-slate-400 dark:text-[#675332] text-2xl material-symbols-outlined">arrow_forward</span>
+<div class="flex-1 flex flex-col items-center">
+<span class="text-primary text-3xl material-symbols-outlined">account_balance_wallet</span>
+<p class="text-slate-700 dark:text-white text-sm font-semibold mt-1">Your Payout</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Card: Example Calculation -->
+<div class="px-4 pb-4 @container">
+<div class="flex flex-col items-stretch justify-start rounded-xl bg-slate-100 dark:bg-[#332a19] shadow-sm">
+<div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 p-6">
+<p class="text-slate-800 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Example Calculation</p>
+<p class="text-slate-600 dark:text-[#c9b592] text-base font-normal leading-normal">If you sell an item for <span class="font-bold text-slate-800 dark:text-white">100 GHS</span>, our 15% commission is 15 GHS. You receive <span class="font-bold text-slate-800 dark:text-white">85 GHS</span>.</p>
+</div>
+</div>
+</div>
+<!-- Tabs -->
+<div class="pb-3">
+<div class="flex border-b border-slate-200 dark:border-[#675332] px-4 gap-8">
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-primary text-slate-800 dark:text-white pb-[13px] pt-4" href="#">
+<p class="text-sm font-bold leading-normal tracking-[0.015em]">Standard Goods</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-slate-500 dark:text-[#c9b592] pb-[13px] pt-4" href="#">
+<p class="text-sm font-bold leading-normal tracking-[0.015em]">Digital Services</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-slate-500 dark:text-[#c9b592] pb-[13px] pt-4" href="#">
+<p class="text-sm font-bold leading-normal tracking-[0.015em]">Promotions</p>
+</a>
+</div>
+</div>
+<!-- Search Bar -->
+<div class="p-4 pt-2">
+<div class="relative">
+<input class="w-full rounded-full border-slate-300 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 py-3 pl-12 pr-4 text-slate-800 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:border-primary focus:ring-primary" placeholder="Search for terms (e.g. delivery fee)" type="text"/>
+<div class="absolute inset-y-0 left-0 flex items-center pl-4">
+<span class="material-symbols-outlined text-slate-400 dark:text-slate-500">search</span>
+</div>
+</div>
+</div>
+<!-- Accordions -->
+<div class="flex flex-col p-4 pt-2">
+<details class="flex flex-col border-t border-t-slate-200 dark:border-t-[#675332] py-2 group" open="">
+<summary class="flex cursor-pointer list-none items-center justify-between gap-6 py-2">
+<p class="text-slate-800 dark:text-white text-sm font-medium leading-normal">What's Included?</p>
+<div class="text-slate-600 dark:text-white transition-transform duration-300 group-open:rotate-180">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</summary>
+<p class="text-slate-600 dark:text-[#c9b592] text-sm font-normal leading-normal pb-2">This commission covers secure payment processing, marketing boosts to get your products seen, 24/7 partner support, and access to analytics to help you grow your business.</p>
+</details>
+<details class="flex flex-col border-t border-t-slate-200 dark:border-t-[#675332] py-2 group">
+<summary class="flex cursor-pointer list-none items-center justify-between gap-6 py-2">
+<p class="text-slate-800 dark:text-white text-sm font-medium leading-normal">Additional Fees</p>
+<div class="text-slate-600 dark:text-white transition-transform duration-300 group-open:rotate-180">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</summary>
+<p class="text-slate-600 dark:text-[#c9b592] text-sm font-normal leading-normal pb-2">Standard withdrawal fees may apply from our payment partners. Optional fees for premium product placement or participation in major promotional campaigns will be clearly communicated beforehand.</p>
+</details>
+<details class="flex flex-col border-t border-t-slate-200 dark:border-t-[#675332] py-2 group">
+<summary class="flex cursor-pointer list-none items-center justify-between gap-6 py-2">
+<p class="text-slate-800 dark:text-white text-sm font-medium leading-normal">Frequently Asked Questions</p>
+<div class="text-slate-600 dark:text-white transition-transform duration-300 group-open:rotate-180">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</summary>
+<p class="text-slate-600 dark:text-[#c9b592] text-sm font-normal leading-normal pb-2">Payouts are processed weekly. You can track all sales and commissions directly from your vendor dashboard. For more details, please refer to our full Vendor Agreement.</p>
+</details>
+<div class="border-t border-t-slate-200 dark:border-t-[#675332] pt-4 mt-2 text-center">
+<a class="text-primary text-sm font-semibold" href="#">View Full Vendor Agreement</a>
+</div>
+</div>
+<!-- Sticky CTA Button -->
+<div class="fixed bottom-0 left-0 right-0 p-4 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-t border-slate-200/50 dark:border-slate-800/50">
+<button class="w-full bg-primary text-slate-900 font-bold py-4 px-6 rounded-full shadow-lg">
+                Start Selling
+            </button>
+</div>
+</div>
+</body></html>

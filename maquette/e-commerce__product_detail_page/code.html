@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Product Details</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#eea62b",
+              "background-light": "#f8f7f6",
+              "background-dark": "#221b10",
+              "surface-dark": "#2a2216",
+              "surface-light": "#ffffff",
+              "text-light": "#1d2129",
+              "text-dark": "#e3e3e3",
+              "text-muted-light": "#5c5c5c",
+              "text-muted-dark": "#a0a0a0",
+              "border-light": "#e5e7eb",
+              "border-dark": "#3a3123",
+            },
+            fontFamily: {
+              "display": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Top App Bar -->
+<header class="sticky top-0 z-20 flex h-16 items-center justify-between bg-background-light/80 px-4 backdrop-blur-sm dark:bg-background-dark/80">
+<button class="flex h-10 w-10 items-center justify-center rounded-full">
+<span class="material-symbols-outlined text-text-light dark:text-text-dark">arrow_back</span>
+</button>
+<span class="text-lg font-bold text-text-light dark:text-text-dark">Details</span>
+<button class="flex h-10 w-10 items-center justify-center rounded-full">
+<span class="material-symbols-outlined text-text-light dark:text-text-dark">share</span>
+</button>
+</header>
+<main class="flex-1 pb-32">
+<!-- Header Image Carousel -->
+<div class="@container">
+<div class="@[480px]:px-4 @[480px]:py-3">
+<div class="bg-cover bg-center flex min-h-80 flex-col justify-between overflow-hidden bg-gray-200 @[480px]:rounded-xl" data-alt="A premium brown leather handbag with gold accents shown against a neutral backdrop." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBbSNxO7tEd91JCxFcfRX1ea3bMyFC22nD_mctyRbnegoQFibMkvd5AA_1qjAeaWI0cLLj2qseOTq_wfYX6tS7AZT8Gb1QRqM5UtVqll_ucdIWMofUPKv1rl-4YSXNhJPkaclqLCXeBA7dOW_9CimMQ5ZU4XdcwcY95dQoVT9wwq2LJIhpEGjNdlyWhYUu5nlEvVuVl_012to8HeHSqF_dQtfOAeKmQrkVy0TyJhRKLQX8ch0aTUa-iqPC5jJH5CBNApeF0M2EVtXfC");'>
+<div class="flex items-center justify-end p-4">
+<button class="flex h-10 w-10 items-center justify-center rounded-full bg-black/30 backdrop-blur-sm">
+<span class="material-symbols-outlined text-white">favorite_border</span>
+</button>
+</div>
+<div class="flex justify-center gap-2 p-5">
+<div class="h-2 w-6 rounded-full bg-white"></div>
+<div class="h-2 w-2 rounded-full bg-white/50"></div>
+<div class="h-2 w-2 rounded-full bg-white/50"></div>
+<div class="h-2 w-2 rounded-full bg-white/50"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Product Information -->
+<div class="space-y-4 px-4 pt-4">
+<!-- Product Header -->
+<div>
+<h1 class="text-3xl font-bold tracking-tight text-text-light dark:text-text-dark">Artisan Leather Tote</h1>
+<p class="cursor-pointer pt-1 text-sm font-normal leading-normal text-text-muted-light underline dark:text-text-muted-dark">By AfroChic Designs</p>
+</div>
+<!-- Rating -->
+<div class="flex items-center gap-2">
+<div class="flex items-center text-primary">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg">star_half</span>
+</div>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">(4.8 stars from 124 reviews)</p>
+</div>
+<!-- Price Block -->
+<div class="flex items-baseline gap-3 pt-2">
+<h2 class="text-4xl font-extrabold tracking-tight text-text-light dark:text-text-dark">$120.00</h2>
+<p class="text-xl font-medium text-text-muted-light line-through dark:text-text-muted-dark">$150.00</p>
+</div>
+</div>
+<!-- Variant Selector -->
+<div class="space-y-4 px-4 pt-6">
+<div>
+<h3 class="text-md font-bold text-text-light dark:text-text-dark">Color: <span class="font-medium text-text-muted-light dark:text-text-muted-dark">Tan Brown</span></h3>
+<div class="mt-3 flex gap-3">
+<button class="h-10 w-10 rounded-full border-2 border-primary bg-[#6F4E37]" data-alt="Tan Brown color swatch"></button>
+<button class="h-10 w-10 rounded-full border-2 border-transparent bg-[#36454F]" data-alt="Charcoal Black color swatch"></button>
+<button class="h-10 w-10 rounded-full border-2 border-transparent bg-[#800020]" data-alt="Burgundy Red color swatch"></button>
+</div>
+</div>
+<div>
+<h3 class="text-md font-bold text-text-light dark:text-text-dark">Size</h3>
+<div class="mt-3 flex gap-3">
+<button class="flex h-12 items-center justify-center rounded-lg border border-border-light bg-surface-light px-6 font-semibold dark:border-border-dark dark:bg-surface-dark">Small</button>
+<button class="flex h-12 items-center justify-center rounded-lg border-2 border-primary bg-primary/20 px-6 font-semibold">Medium</button>
+<button class="flex h-12 cursor-not-allowed items-center justify-center rounded-lg border border-border-light bg-surface-light/50 px-6 font-semibold text-text-muted-light opacity-50 dark:border-border-dark dark:bg-surface-dark/50 dark:text-text-muted-dark">Large</button>
+</div>
+</div>
+</div>
+<!-- Expandable Sections -->
+<div class="space-y-2 px-4 pt-8">
+<details class="group rounded-xl border border-border-light bg-surface-light p-4 dark:border-border-dark dark:bg-surface-dark">
+<summary class="flex cursor-pointer list-none items-center justify-between font-bold">
+                    Product Description
+                    <span class="transition-transform duration-300 group-open:rotate-180">
+<span class="material-symbols-outlined">expand_more</span>
+</span>
+</summary>
+<p class="mt-3 text-sm text-text-muted-light dark:text-text-muted-dark">Handcrafted from 100% genuine African leather, this tote combines timeless style with everyday functionality. Its spacious interior and durable construction make it the perfect companion for work or weekend adventures.</p>
+</details>
+<details class="group rounded-xl border border-border-light bg-surface-light p-4 dark:border-border-dark dark:bg-surface-dark">
+<summary class="flex cursor-pointer list-none items-center justify-between font-bold">
+                    Specifications
+                    <span class="transition-transform duration-300 group-open:rotate-180">
+<span class="material-symbols-outlined">expand_more</span>
+</span>
+</summary>
+<ul class="mt-3 list-disc space-y-1 pl-5 text-sm text-text-muted-light dark:text-text-muted-dark">
+<li>Material: Genuine Full-Grain Leather</li>
+<li>Dimensions: 15" x 12" x 5"</li>
+<li>Hardware: Solid Brass</li>
+<li>Interior: Cotton-lined with zip pocket</li>
+</ul>
+</details>
+<details class="group rounded-xl border border-border-light bg-surface-light p-4 dark:border-border-dark dark:bg-surface-dark">
+<summary class="flex cursor-pointer list-none items-center justify-between font-bold">
+                    Shipping &amp; Returns
+                    <span class="transition-transform duration-300 group-open:rotate-180">
+<span class="material-symbols-outlined">expand_more</span>
+</span>
+</summary>
+<p class="mt-3 text-sm text-text-muted-light dark:text-text-muted-dark">Enjoy complimentary shipping on all orders. Estimated delivery within 3-5 business days. We offer a 30-day return policy for a full refund if you're not completely satisfied.</p>
+</details>
+</div>
+</main>
+<!-- Sticky CTA Bar -->
+<footer class="fixed bottom-0 left-0 z-20 w-full border-t border-border-light bg-background-light/80 p-4 backdrop-blur-sm dark:border-border-dark dark:bg-background-dark/80">
+<div class="flex items-center gap-4">
+<button class="flex h-14 flex-1 items-center justify-center rounded-xl border-2 border-primary font-bold text-primary">Buy Now</button>
+<button class="flex h-14 flex-1 items-center justify-center rounded-xl bg-primary font-bold text-background-dark">Add to Cart</button>
+</div>
+</footer>
+</div>
+</body></html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Handmade Jewelry - Product Listing</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#e64f0f",
+              "background-light": "#f8f6f6",
+              "background-dark": "#221510",
+            },
+            fontFamily: {
+              "display": ["Plus Jakarta Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- Top App Bar -->
+<header class="sticky top-0 z-10 flex flex-col bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex items-center p-4">
+<button class="flex items-center justify-center w-12 h-12 text-gray-800 dark:text-white">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="flex-1 text-lg font-bold tracking-tight text-center text-gray-900 dark:text-white">Handmade Jewelry</h1>
+<div class="flex items-center justify-end w-12 gap-1">
+<button class="relative flex items-center justify-center w-10 h-10 text-gray-800 dark:text-white">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="absolute top-1 right-1 flex h-4 w-4 items-center justify-center rounded-full bg-primary text-xs font-bold text-white">2</span>
+</button>
+</div>
+</div>
+<!-- Filter & Sort Bar -->
+<div class="flex gap-2 px-4 pb-4 overflow-x-auto">
+<button class="flex items-center justify-center h-10 gap-2 px-4 whitespace-nowrap rounded-lg bg-gray-200/60 dark:bg-white/10 shrink-0">
+<span class="material-symbols-outlined text-base text-gray-700 dark:text-gray-300">swap_vert</span>
+<p class="text-sm font-medium leading-normal text-gray-800 dark:text-white">Sort by</p>
+</button>
+<button class="flex items-center justify-center h-10 gap-2 px-4 whitespace-nowrap rounded-lg bg-gray-200/60 dark:bg-white/10 shrink-0">
+<p class="text-sm font-medium leading-normal text-gray-800 dark:text-white">Price</p>
+<span class="material-symbols-outlined text-base text-gray-700 dark:text-gray-300">expand_more</span>
+</button>
+<button class="flex items-center justify-center h-10 gap-2 px-4 whitespace-nowrap rounded-lg bg-gray-200/60 dark:bg-white/10 shrink-0">
+<p class="text-sm font-medium leading-normal text-gray-800 dark:text-white">Rating</p>
+</button>
+<button class="flex items-center justify-center h-10 gap-2 px-4 whitespace-nowrap rounded-lg bg-gray-200/60 dark:bg-white/10 shrink-0">
+<p class="text-sm font-medium leading-normal text-gray-800 dark:text-white">Brand</p>
+<span class="material-symbols-outlined text-base text-gray-700 dark:text-gray-300">expand_more</span>
+</button>
+</div>
+</header>
+<!-- Product Grid -->
+<main class="grid flex-1 grid-cols-2 gap-4 p-4 @sm:grid-cols-3 @lg:grid-cols-4">
+<!-- Product Card 1 -->
+<div class="flex flex-col gap-3">
+<div class="relative w-full overflow-hidden bg-gray-200 rounded-xl aspect-square dark:bg-white/10">
+<img class="object-cover w-full h-full" data-alt="Close up of intricate colorful beaded necklace from Kenya" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7Hczs6r6rjlWTp6o6yvL9o8UZF4CBz93e6zI9d9oXldXZfXrVJ0bIJMy8VfBNtIdB3zD3DjmcH2XoEDm7SD695B9PvEqE-oBqzm9w2FBA1FwnHC_dN1vFgZrbD6vNHQsNBkdxLxnTbS4iQ-aXXrKT30X9jb3XAVuPFfTLtFWdOhaa2JWVATfvKOjCfzb5rvoSLGStuKI7HQrfQKMe8PjVEWD0FIPyAYOQDHi0GPt7TbbdUjvH1Y1szd0h1ujK4jNRTwSLkSb8iYv1"/>
+<button class="absolute flex items-center justify-center w-8 h-8 rounded-full bottom-2 right-2 bg-primary/80 backdrop-blur-sm">
+<span class="material-symbols-outlined text-white text-lg">add_shopping_cart</span>
+</button>
+</div>
+<div class="flex flex-col">
+<h3 class="text-sm font-semibold leading-tight text-gray-800 dark:text-white">Beaded Maasai Necklace</h3>
+<p class="text-xs text-gray-500 dark:text-gray-400">Soko Marketplace</p>
+<div class="flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-yellow-500 !text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<p class="text-xs font-medium text-gray-700 dark:text-gray-300">4.8</p>
+</div>
+<p class="mt-1 text-sm font-bold text-gray-900 dark:text-white">KES 2,500</p>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="flex flex-col gap-3">
+<div class="relative w-full overflow-hidden bg-gray-200 rounded-xl aspect-square dark:bg-white/10">
+<img class="object-cover w-full h-full" data-alt="Woman wearing a golden Adinkra symbol bracelet from Ghana" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuZmmm6l1DDKCragy3v70zZFhfN6U3lyvF0PGcDJJsOg9G02lYKgmbXT0GATdMpRP9nHJW4q3LK6igS0P46gZjosIdaWoj-eNIBAf1rsivKLckXqwveV3mT3n_JllTT6xHsgA9lHjm6hFLuXO1FVbkOFc8xWJ_EoHQ1BR1RJRc5xa_7E9y8xiFQtQEIQnp_t2G1pyGWHz1ysiYmv_BVRKcD6Cb-8YxC5ify73fulsuI8GALbn3pyLuRJcYs6bt6jsJvPIPXRfC0Mu1"/>
+<button class="absolute flex items-center justify-center w-8 h-8 rounded-full bottom-2 right-2 bg-primary/80 backdrop-blur-sm">
+<span class="material-symbols-outlined text-white text-lg">add_shopping_cart</span>
+</button>
+</div>
+<div class="flex flex-col">
+<h3 class="text-sm font-semibold leading-tight text-gray-800 dark:text-white">Adinkra Symbol Bracelet</h3>
+<p class="text-xs text-gray-500 dark:text-gray-400">Artisan Crafts GH</p>
+<div class="flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-yellow-500 !text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<p class="text-xs font-medium text-gray-700 dark:text-gray-300">4.9</p>
+</div>
+<p class="mt-1 text-sm font-bold text-gray-900 dark:text-white">GHS 150</p>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="flex flex-col gap-3">
+<div class="relative w-full overflow-hidden bg-gray-200 rounded-xl aspect-square dark:bg-white/10">
+<img class="object-cover w-full h-full" data-alt="Handcrafted leather sandals with intricate beading" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjZbZxccZItqXfxb-wlfFyZ12faElkx6wddE34QbETzTHPXhnTSi7GVxd_dmHx0hlWQqpB3KwRCHmEKVld2x5YF7pPjTkUhLcc2u0C0kCs0Nb-FdejmS4gF54eZpNr8trtE0nnXaO5jFUslj0vOPGLckFM3jrWGoM_ESqMw4YzMF15KrsKMs-jNn7TNpDbxg00toYktX3xMceP_-JS_IEQkdhGi7volCHibCG04rYK2FNBiIowHZDP9auL_cIBtk6HN-PewDuXbZJ4"/>
+<button class="absolute flex items-center justify-center w-8 h-8 rounded-full bottom-2 right-2 bg-primary/80 backdrop-blur-sm">
+<span class="material-symbols-outlined text-white text-lg">add_shopping_cart</span>
+</button>
+</div>
+<div class="flex flex-col">
+<h3 class="text-sm font-semibold leading-tight text-gray-800 dark:text-white">Akosombo Leather Sandals</h3>
+<p class="text-xs text-gray-500 dark:text-gray-400">Volta Leathers</p>
+<div class="flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-yellow-500 !text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<p class="text-xs font-medium text-gray-700 dark:text-gray-300">4.6</p>
+</div>
+<p class="mt-1 text-sm font-bold text-gray-900 dark:text-white">GHS 220</p>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="flex flex-col gap-3">
+<div class="relative w-full overflow-hidden bg-gray-200 rounded-xl aspect-square dark:bg-white/10">
+<img class="object-cover w-full h-full" data-alt="Silver Fulani earrings with a delicate design" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnZhTnLZUIz3g1modFVaAfv-_Xmratff7XtF5bzyQ1jMIJB93lA3Teccr2MIflvyG80bVZuW-FWhY9sq1oN8WY1GusNui6-ppywWZq2fvvKKQVNQ-1HJcYqkPBvXc6ufNWwtd_rFsP3b8C-Pz76Mf8SscdTRBm3AIkL8w21l8B5yLnilYuQ756Oqmjl06V5nVXdOofbfZHG4go4k3FTWzBgyVthHoxtXEBndRvG0ztqoGjPK0-qpBf1L753PiRbRSuAYUw4-UvrENY"/>
+<button class="absolute flex items-center justify-center w-8 h-8 rounded-full bottom-2 right-2 bg-primary/80 backdrop-blur-sm">
+<span class="material-symbols-outlined text-white text-lg">add_shopping_cart</span>
+</button>
+</div>
+<div class="flex flex-col">
+<h3 class="text-sm font-semibold leading-tight text-gray-800 dark:text-white">Fulani Twist Earrings</h3>
+<p class="text-xs text-gray-500 dark:text-gray-400">Naija Jewels</p>
+<div class="flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-yellow-500 !text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<p class="text-xs font-medium text-gray-700 dark:text-gray-300">5.0</p>
+</div>
+<p class="mt-1 text-sm font-bold text-gray-900 dark:text-white">NGN 8,500</p>
+</div>
+</div>
+<!-- Product Card 5 -->
+<div class="flex flex-col gap-3">
+<div class="relative w-full overflow-hidden bg-gray-200 rounded-xl aspect-square dark:bg-white/10">
+<img class="object-cover w-full h-full" data-alt="A collection of colorful Zulu beaded bracelets" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJXjiajEn2zS8G3H27mrRPS8k2GDBlIPSU9J0WVIcxDL2sMd0dgBI4ShZAdZZufmEz8-0e-bf-pPqUrCjoq_TSAJw-C9-ZRZjLYC-KWUD8an4LDL6IneT7TFZ20pS0w4gio5saoSYmvzLDNHlA8eOTiD9Zw5SNlySTqgGVvTTFp70xOXZOsW9b_0OYGNyW8IhJ4CWnCWdW2uLVMWdavbp79nb9vcjqPkm9HZm_YWAwhKbD343fqfV9Lo9pFvhB2xLJt3W83mMBQxxx"/>
+<button class="absolute flex items-center justify-center w-8 h-8 rounded-full bottom-2 right-2 bg-primary/80 backdrop-blur-sm">
+<span class="material-symbols-outlined text-white text-lg">add_shopping_cart</span>
+</button>
+</div>
+<div class="flex flex-col">
+<h3 class="text-sm font-semibold leading-tight text-gray-800 dark:text-white">Zulu Beaded Bracelets</h3>
+<p class="text-xs text-gray-500 dark:text-gray-400">Durban Crafts</p>
+<div class="flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-yellow-500 !text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<p class="text-xs font-medium text-gray-700 dark:text-gray-300">4.7</p>
+</div>
+<p class="mt-1 text-sm font-bold text-gray-900 dark:text-white">ZAR 120</p>
+</div>
+</div>
+<!-- Product Card 6 -->
+<div class="flex flex-col gap-3">
+<div class="relative w-full overflow-hidden bg-gray-200 rounded-xl aspect-square dark:bg-white/10">
+<img class="object-cover w-full h-full" data-alt="A man wearing a brightly patterned Bogolan mudcloth shirt" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4Tm8o8aRD6kk88aPO_4KgIx6Y2d4MGDjFyYrq9R0f0ZrkWLlEmwJ2kESSqKhS_TEjYdt3rBSooj6wf8hnU1h0ntYWhpaxeiSjUJ0azyekyLEBjLzyuUBa0MiNWyRVTri036ZldSiULfWEQgg35l_KKgOlvnxsItlDgOMlq_x31f2mtipOcEYTcIP0C7Yt6-gS1wHdqs5urISEfy5-zkCdzUko_u3nhLjSSKOXPjxVrR8JC02ilyI2HojEaDXv9vhPVOrS-oc1bPBL"/>
+<button class="absolute flex items-center justify-center w-8 h-8 rounded-full bottom-2 right-2 bg-primary/80 backdrop-blur-sm">
+<span class="material-symbols-outlined text-white text-lg">add_shopping_cart</span>
+</button>
+</div>
+<div class="flex flex-col">
+<h3 class="text-sm font-semibold leading-tight text-gray-800 dark:text-white">Bogolan Mudcloth Ring</h3>
+<p class="text-xs text-gray-500 dark:text-gray-400">Malian Artisans</p>
+<div class="flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-yellow-500 !text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<p class="text-xs font-medium text-gray-700 dark:text-gray-300">4.9</p>
+</div>
+<p class="mt-1 text-sm font-bold text-gray-900 dark:text-white">CFA 5,000</p>
+</div>
+</div>
+</main>
+<!-- FAB for Voice Search -->
+<div class="fixed z-20 bottom-6 right-6">
+<button class="flex items-center justify-center w-14 h-14 overflow-hidden rounded-full shadow-lg bg-primary text-white">
+<span class="material-symbols-outlined">mic</span>
+</button>
+</div>
+<div class="h-20"></div>
+</div>
+</body></html>

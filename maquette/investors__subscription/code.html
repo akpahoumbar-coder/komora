@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Subscribe to Plan</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#137fec",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101922",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative mx-auto flex h-auto min-h-screen w-full max-w-md flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="flex items-center p-4 pb-2 justify-between sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm z-10">
+<button class="text-slate-800 dark:text-white flex size-10 shrink-0 items-center justify-center rounded-full">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</button>
+<h1 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Subscribe to Plan</h1>
+<div class="size-10 shrink-0"></div> <!-- Spacer for centering title -->
+</header>
+<main class="flex-1 px-4 py-4">
+<!-- Plan Details Card -->
+<div class="space-y-4 rounded-xl bg-slate-100 dark:bg-slate-800/50 p-4 mb-6">
+<!-- ListItem -->
+<div class="flex items-center gap-4">
+<div class="text-primary flex items-center justify-center rounded-lg bg-primary/20 shrink-0 size-12">
+<span class="material-symbols-outlined text-3xl">trending_up</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-slate-900 dark:text-white text-base font-semibold leading-normal line-clamp-1">AfroTech Growth Fund</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal line-clamp-2">High Risk | Est. 12% Avg. Return</p>
+</div>
+</div>
+<!-- BodyText -->
+<p class="text-slate-600 dark:text-slate-300 text-sm font-normal leading-normal">
+                    A brief description of the AfroTech Growth Fund, highlighting its potential and investment strategy in the burgeoning tech landscape.
+                </p>
+</div>
+<!-- Investment Amount Section -->
+<div class="flex max-w-[480px] flex-wrap items-end gap-4">
+<!-- TextField -->
+<label class="flex flex-col min-w-40 flex-1">
+<p class="text-slate-900 dark:text-white text-base font-medium leading-normal pb-2">Enter Amount to Invest</p>
+<div class="relative">
+<span class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3 text-slate-400 dark:text-slate-500 text-base font-medium">KES</span>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-slate-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-slate-300 dark:border-slate-700 bg-slate-200 dark:bg-slate-800/60 focus:border-primary h-14 placeholder:text-slate-400 dark:placeholder:text-slate-500 pl-12 pr-4 text-base font-normal leading-normal" placeholder="500.00" value=""/>
+</div>
+</label>
+</div>
+<!-- Chips -->
+<div class="flex gap-3 pt-3 pb-6 overflow-x-auto">
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-slate-200 dark:bg-slate-800/60 px-4"><p class="text-slate-800 dark:text-slate-200 text-sm font-medium leading-normal">100</p></button>
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/20 px-4"><p class="text-primary text-sm font-medium leading-normal">500</p></button>
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-slate-200 dark:bg-slate-800/60 px-4"><p class="text-slate-800 dark:text-slate-200 text-sm font-medium leading-normal">1000</p></button>
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-slate-200 dark:bg-slate-800/60 px-4"><p class="text-slate-800 dark:text-slate-200 text-sm font-medium leading-normal">5000</p></button>
+</div>
+<!-- Summary Section -->
+<div class="space-y-3 rounded-xl bg-slate-100 dark:bg-slate-800/50 p-4 mb-6">
+<div class="flex justify-between items-center">
+<p class="text-slate-600 dark:text-slate-300 text-sm">Investment Amount</p>
+<p class="text-slate-800 dark:text-slate-100 text-sm font-medium">KES 500.00</p>
+</div>
+<div class="flex justify-between items-center">
+<p class="text-slate-600 dark:text-slate-300 text-sm">Processing Fee (1%)</p>
+<p class="text-slate-800 dark:text-slate-100 text-sm font-medium">KES 5.00</p>
+</div>
+<div class="h-px bg-slate-200 dark:bg-slate-700 my-2"></div>
+<div class="flex justify-between items-center">
+<p class="text-slate-800 dark:text-slate-100 text-base font-bold">Total Payable</p>
+<p class="text-primary text-base font-bold">KES 505.00</p>
+</div>
+</div>
+<!-- Payment Method Selector -->
+<button class="flex w-full items-center gap-4 rounded-xl bg-slate-100 dark:bg-slate-800/50 p-4 text-left">
+<div class="text-primary flex items-center justify-center rounded-lg bg-primary/20 shrink-0 size-10">
+<span class="material-symbols-outlined text-2xl">account_balance_wallet</span>
+</div>
+<div class="flex-1 flex flex-col justify-center">
+<p class="text-slate-900 dark:text-white text-base font-medium leading-normal line-clamp-1">Wallet</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal line-clamp-2">Balance: KES 1,230.50</p>
+</div>
+<span class="material-symbols-outlined text-slate-400 dark:text-slate-500">chevron_right</span>
+</button>
+</main>
+<!-- Footer section with CTA and disclaimer -->
+<footer class="sticky bottom-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm p-4 space-y-4">
+<!-- Legal/Disclaimer Text -->
+<p class="text-slate-500 dark:text-slate-400 text-xs text-center">
+                By clicking "Confirm &amp; Invest", you agree to our <a class="font-medium text-primary" href="#">Terms of Service</a> and <a class="font-medium text-primary" href="#">Privacy Policy</a>.
+            </p>
+<!-- Primary CTA Button -->
+<button class="flex h-14 w-full items-center justify-center gap-x-2 rounded-xl bg-primary px-6 text-base font-bold text-white shadow-lg shadow-primary/30">
+<span class="material-symbols-outlined">lock</span>
+                Confirm &amp; Invest
+            </button>
+</footer>
+</div>
+</body></html>

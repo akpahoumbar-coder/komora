@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AI Assistant Results</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+    @layer base {
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+    }
+  </style>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#E57C23", // Deep, rich terracotta/warm orange
+            "secondary": "#F8C630", // Bright, optimistic yellow/gold
+            "background-light": "#FFF8F0", // Off-white/light cream
+            "background-dark": "#211A13", // Deep brown for dark mode
+            "text-light": "#3D2B1F", // Dark charcoal/deep brown for light mode
+            "text-dark": "#F5E9DA", // Creamy white for dark mode
+            "card-light": "#FFFFFF", // White for cards in light mode
+            "card-dark": "#32281E", // Darker brown for cards in dark mode
+            "subtle-light": "#EFEBE6",
+            "subtle-dark": "#3D2B1F",
+          },
+          fontFamily: {
+            "display": ["Inter", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "0.75rem",
+            "xl": "1rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- Top App Bar -->
+<div class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10 border-b border-subtle-light dark:border-subtle-dark">
+<div class="text-text-light dark:text-text-dark flex size-10 shrink-0 items-center justify-center">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</div>
+<h2 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">AI Assistant Results</h2>
+<div class="w-10"></div>
+</div>
+<!-- Main Content -->
+<main class="flex-1 flex flex-col gap-4 pb-28">
+<!-- Conversation -->
+<div class="flex flex-col gap-4 pt-4">
+<!-- User Query -->
+<div class="flex items-end gap-3 px-4 justify-end">
+<div class="flex flex-1 flex-col gap-1 items-end">
+<p class="text-text-light/70 dark:text-text-dark/70 text-[13px] font-normal leading-normal max-w-[360px] text-right">You</p>
+<p class="text-base font-normal leading-normal flex max-w-[360px] rounded-lg px-4 py-3 bg-primary text-white">Show me the latest price for Safaricom stock.</p>
+</div>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-10 shrink-0" data-alt="User avatar with abstract pattern" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDjWSiUEyb_G3v0EyLBPEDvzYyWwNiYo-1OLmw_CBvjiiraf6e3VFf6mNE3A505ZIj7-YoypZblyL94T5Fk26tiKcrbu4wET4AZb-EXlVVHKoCcgOgH6C7MtU3k4Zms1ieyXvT4N0R3mjmApa1USCfrmydbCxjGSXhJXWFz4Nx1FThgCWf3BE4QAKmXP-32gdFzE8yomfpjWuRJ92vGQbseWMLUWjvEv5aS6g0QVQ6oDRrsaEcBijA1BXxFMgV-Lhp9dGBRL0n5mYP1");'></div>
+</div>
+<!-- AI Response -->
+<div class="flex items-end gap-3 px-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-10 shrink-0" data-alt="AI assistant avatar with glowing circuit pattern" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBXntL1crFolHtvlWwYusYEZvG-ECnAypSvWEnGKZQywxqvjg7tF5N_OBDnl_pUfSncqXapvhs5Yx4mfHl1usYiE-CpIiYCZMwpKss_C9Sn-mH8okq_jOHM1XfMNErAhgFbpL7es06sl42lkEfqD9J31k3xZy5ZNGR7-6dChsff47aOOTOFxEQ7iI8l9bgJ6I7G4sNygH20StyCWxeG30lu5ZLgJLxvfhYMXY3B0l1_ApXalW5K28xVHv7hUGjqBWawenySTbV3XYAv");'></div>
+<div class="flex flex-1 flex-col gap-1 items-start">
+<p class="text-text-light/70 dark:text-text-dark/70 text-[13px] font-normal leading-normal max-w-[360px]">AI Assistant</p>
+<p class="text-base font-normal leading-normal flex max-w-[360px] rounded-lg px-4 py-3 bg-card-light dark:bg-card-dark text-text-light dark:text-text-dark">Here is the current stock information for Safaricom PLC (SCOM).</p>
+</div>
+</div>
+</div>
+<!-- Dynamic Result Card: Investment -->
+<div class="flex flex-wrap gap-4 px-4 py-2">
+<div class="flex w-full flex-1 flex-col gap-4 rounded-xl border border-subtle-light dark:border-subtle-dark bg-card-light dark:bg-card-dark p-6 shadow-sm">
+<div>
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">Safaricom PLC (SCOM)</p>
+<p class="text-text-light dark:text-text-dark tracking-light text-[32px] font-bold leading-tight truncate">Ksh 16.50</p>
+<div class="flex gap-1">
+<p class="text-text-light/70 dark:text-text-dark/70 text-base font-normal leading-normal">Today</p>
+<p class="text-green-500 text-base font-medium leading-normal">+0.25%</p>
+</div>
+</div>
+<div class="flex min-h-[160px] flex-1 flex-col gap-6 py-4">
+<svg fill="none" height="130" preserveaspectratio="none" viewbox="-3 0 478 130" width="100%" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<lineargradient gradientunits="userSpaceOnUse" id="chart-gradient-light" x1="236" x2="236" y1="1" y2="149">
+<stop stop-color="#E57C23" stop-opacity="0.2"></stop>
+<stop offset="1" stop-color="#E57C23" stop-opacity="0"></stop>
+</lineargradient>
+<lineargradient gradientunits="userSpaceOnUse" id="chart-gradient-dark" x1="236" x2="236" y1="1" y2="149">
+<stop stop-color="#E57C23" stop-opacity="0.3"></stop>
+<stop offset="1" stop-color="#E57C23" stop-opacity="0"></stop>
+</lineargradient>
+</defs>
+<path class="fill-[url(#chart-gradient-light)] dark:fill-[url(#chart-gradient-dark)]" d="M0 109C18.1538 109 18.1538 21 36.3077 21C54.4615 21 54.4615 41 72.6154 41C90.7692 41 90.7692 93 108.923 93C127.077 93 127.077 33 145.231 33C163.385 33 163.385 101 181.538 101C199.692 101 199.692 61 217.846 61C236 61 236 45 254.154 45C272.308 45 272.308 121 290.462 121C308.615 121 308.615 129 326.769 129C344.923 129 344.923 1 363.077 1C381.231 1 381.231 81 399.385 81C417.538 81 417.538 100 435.692 100C453.846 100 453.846 25 472 25V129H0V109Z"></path>
+<path d="M0 109C18.1538 109 18.1538 21 36.3077 21C54.4615 21 54.4615 41 72.6154 41C90.7692 41 90.7692 93 108.923 93C127.077 93 127.077 33 145.231 33C163.385 33 163.385 101 181.538 101C199.692 101 199.692 61 217.846 61C236 61 236 45 254.154 45C272.308 45 272.308 121 290.462 121C308.615 121 308.615 129 326.769 129C344.923 129 344.923 1 363.077 1C381.231 1 381.231 81 399.385 81C417.538 81 417.538 100 435.692 100C453.846 100 453.846 25 472 25" stroke="#E57C23" stroke-linecap="round" stroke-width="3"></path>
+</svg>
+<div class="flex justify-around">
+<p class="text-text-light/70 dark:text-text-dark/70 text-[13px] font-bold leading-normal tracking-[0.015em]">9am</p>
+<p class="text-text-light/70 dark:text-text-dark/70 text-[13px] font-bold leading-normal tracking-[0.015em]">12pm</p>
+<p class="text-text-light/70 dark:text-text-dark/70 text-[13px] font-bold leading-normal tracking-[0.015em]">3pm</p>
+<p class="text-text-light/70 dark:text-text-dark/70 text-[13px] font-bold leading-normal tracking-[0.015em]">6pm</p>
+</div>
+</div>
+<button class="w-full rounded-lg bg-primary/20 dark:bg-primary/30 py-3 text-base font-bold text-primary dark:text-secondary">View Full Analysis</button>
+</div>
+</div>
+<!-- Suggested Actions Section -->
+<div class="px-4">
+<h3 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight tracking-[-0.015em] pb-2 pt-4">Suggested Actions</h3>
+<div class="flex flex-col gap-3">
+<button class="flex w-full items-center justify-center rounded-lg border border-subtle-light dark:border-subtle-dark bg-card-light dark:bg-card-dark px-4 py-3 text-center text-base font-medium text-text-light dark:text-text-dark shadow-sm">Set a price alert</button>
+<button class="flex w-full items-center justify-center rounded-lg border border-subtle-light dark:border-subtle-dark bg-card-light dark:bg-card-dark px-4 py-3 text-center text-base font-medium text-text-light dark:text-text-dark shadow-sm">Compare with other telcos</button>
+<button class="flex w-full items-center justify-center rounded-lg border border-subtle-light dark:border-subtle-dark bg-card-light dark:bg-card-dark px-4 py-3 text-center text-base font-medium text-text-light dark:text-text-dark shadow-sm">Add to my watchlist</button>
+</div>
+</div>
+</main>
+<!-- Floating Action Button -->
+<div class="fixed bottom-6 right-6 z-20">
+<button class="flex h-16 w-16 items-center justify-center rounded-full bg-secondary shadow-lg">
+<span class="material-symbols-outlined text-3xl text-text-light">mic</span>
+</button>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Create Account</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#d45811",
+                        "background-light": "#f8f9fa",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.75rem",
+                        "xl": "1rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Header -->
+<header class="flex h-16 shrink-0 items-center justify-center p-4">
+<div class="flex items-center gap-2">
+<svg class="text-primary" fill="none" height="28" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+<span class="text-xl font-bold text-gray-900 dark:text-white">Umoja</span>
+</div>
+</header>
+<main class="flex-1 px-4 py-6 sm:px-6">
+<div class="mx-auto max-w-md">
+<!-- Headline -->
+<div class="text-center mb-8">
+<h1 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Create Your Account</h1>
+<p class="mt-2 text-base text-gray-600 dark:text-gray-400">Join us to get started.</p>
+</div>
+<!-- Registration Form -->
+<div class="flex flex-col gap-4">
+<!-- Full Name -->
+<label class="flex flex-col w-full">
+<p class="text-sm font-medium leading-normal pb-2 text-gray-700 dark:text-gray-300">Full Name</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg bg-gray-100 dark:bg-gray-800/50 border-2 border-transparent focus:border-primary focus:ring-0 h-14 placeholder:text-gray-400 dark:placeholder:text-gray-500 p-4 text-base font-normal leading-normal text-gray-900 dark:text-white" placeholder="Enter your full name" value=""/>
+</label>
+<!-- Email or Phone -->
+<label class="flex flex-col w-full">
+<p class="text-sm font-medium leading-normal pb-2 text-gray-700 dark:text-gray-300">Email or Phone</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg bg-gray-100 dark:bg-gray-800/50 border-2 border-transparent focus:border-primary focus:ring-0 h-14 placeholder:text-gray-400 dark:placeholder:text-gray-500 p-4 text-base font-normal leading-normal text-gray-900 dark:text-white" placeholder="Enter your email or phone number" value=""/>
+</label>
+<!-- Password -->
+<label class="flex flex-col w-full">
+<p class="text-sm font-medium leading-normal pb-2 text-gray-700 dark:text-gray-300">Password</p>
+<div class="relative flex w-full flex-1 items-stretch">
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg bg-gray-100 dark:bg-gray-800/50 border-2 border-transparent focus:border-primary focus:ring-0 h-14 placeholder:text-gray-400 dark:placeholder:text-gray-500 p-4 text-base font-normal leading-normal text-gray-900 dark:text-white" placeholder="Create a password" type="password" value=""/>
+<div class="absolute inset-y-0 right-0 flex items-center pr-4">
+<i class="material-symbols-outlined cursor-pointer text-gray-400 dark:text-gray-500">visibility_off</i>
+</div>
+</div>
+</label>
+<!-- Terms & Conditions -->
+<div class="flex items-center gap-3 py-2">
+<input class="form-checkbox h-5 w-5 rounded border-2 border-gray-300 dark:border-gray-600 bg-transparent text-primary checked:border-primary focus:ring-0 focus:ring-offset-0" id="terms-checkbox" type="checkbox"/>
+<label class="text-sm font-normal leading-normal text-gray-600 dark:text-gray-400" for="terms-checkbox">
+                            I agree to the <a class="font-medium text-primary hover:underline" href="#">Terms &amp; Conditions</a> and <a class="font-medium text-primary hover:underline" href="#">Privacy Policy</a>.
+                        </label>
+</div>
+<!-- CTA Button -->
+<button class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-14 px-6 bg-primary text-white text-base font-bold leading-normal transition-opacity hover:opacity-90">
+<span class="truncate">Create Account</span>
+</button>
+</div>
+<!-- Divider -->
+<div class="flex items-center gap-4 my-8">
+<hr class="w-full border-gray-200 dark:border-gray-700"/>
+<span class="text-sm font-medium text-gray-500 dark:text-gray-400">or</span>
+<hr class="w-full border-gray-200 dark:border-gray-700"/>
+</div>
+<!-- Social Sign-Up -->
+<div class="flex flex-col gap-4">
+<button class="flex w-full items-center justify-center gap-3 overflow-hidden rounded-lg h-14 px-6 bg-gray-100 dark:bg-gray-800/50 text-gray-800 dark:text-white text-base font-semibold leading-normal transition-colors hover:bg-gray-200 dark:hover:bg-gray-800">
+<img alt="Google logo" class="h-6 w-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDITqm4WMjUYG51me98nnn4go984nERQwrWQ2mlkJ7D1Nqc8WpQoPZrASmy89iqUuv1-vR_69YYHwgmcQpQOOsrqNdJHYKhosYMAQ0RE87XswVHWf9pL-SuBlg4zDciOPYehdOomSDIKIFOZ5e7s3p8W9jnAwaN8LQ0g_9-CHBzQDTvQ8dlA1H9XmKPJ7IBh6DEmSQiE0RHA4Qiue8Wbryv1kFs4V0z515q16mcOL0fSLaueq8MfynbKb0wRPRIHVN6IgbH7RfuroXI"/>
+<span class="truncate">Sign up with Google</span>
+</button>
+<button class="flex w-full items-center justify-center gap-3 overflow-hidden rounded-lg h-14 px-6 bg-gray-100 dark:bg-gray-800/50 text-gray-800 dark:text-white text-base font-semibold leading-normal transition-colors hover:bg-gray-200 dark:hover:bg-gray-800">
+<img alt="Apple logo" class="h-6 w-6 dark:invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCa1FpvO-fR5ZiolggGkfbXzWG-FMyKReWgI_faGivs66yxg7U_L5eEEcf_vFAfrkR2qdV8pSkRzxD9C7d3ud0VjpFyMRvxmpQb-spwmgpD_QqVxCre05dcl8EjQM-9DPbSOl9K1FxeHrQY_Ssw_rzTv2YQ_kCaYE55w3LX-_8SPJLucdseGDvzyMUeq_gGQQD-XtOZir-aoZPQi3-fdVlfWdvj5-zgFrRjlDyyga_geZX2L0hQ8tV_IAh6CTOLxJkCK9IzpZzKQ6c2"/>
+<span class="truncate">Sign up with Apple</span>
+</button>
+</div>
+<!-- Login Prompt -->
+<div class="mt-10 text-center">
+<p class="text-sm text-gray-600 dark:text-gray-400">
+                        Already have an account?
+                        <a class="font-bold text-primary hover:underline" href="#">Log In</a>
+</p>
+</div>
+</div>
+</main>
+</div>
+</body></html>

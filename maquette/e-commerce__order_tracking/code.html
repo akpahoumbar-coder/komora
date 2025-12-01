@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Track Your Order</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,0" rel="stylesheet"/>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#eea62b",
+              "background-light": "#f8f7f6",
+              "background-dark": "#221b10",
+              "success": "#22c55e",
+              "teal": "#14b8a6",
+            },
+            fontFamily: {
+              "display": ["Plus Jakarta Sans", "Noto Sans", "sans-serif"]
+            },
+            borderRadius: {
+              "DEFAULT": "0.5rem",
+              "lg": "1rem",
+              "xl": "1.5rem",
+              "full": "9999px"
+            },
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark overflow-x-hidden">
+<!-- Top App Bar -->
+<div class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10 border-b border-gray-200/10">
+<div class="text-gray-900 dark:text-white flex size-12 shrink-0 items-center">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</div>
+<h2 class="text-gray-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Track Your Order</h2>
+<div class="flex w-12 items-center justify-end">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 bg-transparent text-gray-900 dark:text-white gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+<span class="material-symbols-outlined text-2xl">help_outline</span>
+</button>
+</div>
+</div>
+<!-- Map View -->
+<div class="flex px-4 py-3">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl object-cover shadow-lg" data-alt="Live map view showing the courier's route to the delivery location" data-location="Accra, Ghana" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBW2S__2cakpa2azhmTh7E5an8--RpXFXYfkLSG-QSrONl95GxUpaYO26bWykhQn3OisuvoeFyPaCKomAGsVxoTzW0_4KaPZ7i8HHQOoBQxRAVKDCgLRkG3hSaCe8Sg0sHy65hZtooLyYy9JlCQ5e18U-lOxiISRD0Fh6j45bLktMmXG_zxV_MRl80NIMqu0BMDXDwaC83qoo45hoBln0MaWiYqHcbjRuaoWTtbh_s59oApibDCVe-wP3uKrwSTx-np1MjQ5h_kXuFO");'></div>
+</div>
+<!-- ETA Card -->
+<div class="p-4 pt-1">
+<div class="flex items-stretch justify-between gap-4 rounded-xl bg-gray-50 dark:bg-white/10 p-4 shadow-sm">
+<div class="flex flex-[2_2_0px] flex-col gap-4">
+<div class="flex flex-col gap-1">
+<p class="text-primary text-base font-bold leading-tight">Arriving in 15 minutes</p>
+<p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-normal">Your order #GH123-456 is on its way</p>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-primary/20 text-primary text-sm font-medium leading-normal w-fit">
+<span class="truncate">View Order Details</span>
+</button>
+</div>
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl flex-1 max-w-[80px]" data-alt="Product image for a traditional African fabric" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBvaGIa7DKEv_62ldn7dlmz5kGnwjwaplxe-EuiKzlc1_VoRO0AzxVdx6VqpxIQ7A1OmQytylld3CJlG4h2ENS-y-wQ4dhQF1Q0ODGAajivQae9-QlSJEAY5RLMfVDS7W1G8U4OFLqASFk44O2fOcCkecHMiAB1geLH270GApr39pFh-MYWS-MRw3FVIevSOL8tX0DD0wQR6AjNOMNPMnKVM4jYWSmzx2ClJSy6Nj4KnH8vcoNbD1p4S9pUPLn-pSkgLfJkEoFVxOsd");'></div>
+</div>
+</div>
+<!-- Timeline -->
+<div class="grid grid-cols-[40px_1fr] gap-x-2 px-4 pt-4">
+<!-- Step 1: Order Confirmed -->
+<div class="flex flex-col items-center gap-1 pt-3">
+<div class="text-success flex items-center justify-center rounded-full bg-success/20 w-8 h-8">
+<span class="material-symbols-outlined text-xl">check_circle</span>
+</div>
+<div class="w-[1.5px] bg-primary h-2 grow"></div>
+</div>
+<div class="flex flex-1 flex-col py-3">
+<p class="text-gray-900 dark:text-white text-base font-medium leading-normal">Order Confirmed</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">10:00 AM</p>
+</div>
+<!-- Step 2: Being Prepared -->
+<div class="flex flex-col items-center gap-1">
+<div class="w-[1.5px] bg-primary h-2"></div>
+<div class="text-success flex items-center justify-center rounded-full bg-success/20 w-8 h-8">
+<span class="material-symbols-outlined text-xl">check_circle</span>
+</div>
+<div class="w-[1.5px] bg-primary h-2 grow"></div>
+</div>
+<div class="flex flex-1 flex-col py-3">
+<p class="text-gray-900 dark:text-white text-base font-medium leading-normal">Being Prepared</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">10:05 AM</p>
+</div>
+<!-- Step 3: Out for Delivery (Current) -->
+<div class="flex flex-col items-center gap-1">
+<div class="w-[1.5px] bg-primary h-2"></div>
+<div class="text-primary flex items-center justify-center rounded-full bg-primary/20 w-8 h-8">
+<span class="material-symbols-outlined text-xl">local_shipping</span>
+</div>
+<div class="w-[1.5px] bg-gray-200 dark:bg-gray-700 h-2 grow"></div>
+</div>
+<div class="flex flex-1 flex-col py-3">
+<p class="text-primary text-base font-bold leading-normal">Out for Delivery</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">10:30 AM</p>
+</div>
+<!-- Step 4: Delivered (Future) -->
+<div class="flex flex-col items-center gap-1 pb-3">
+<div class="w-[1.5px] bg-gray-200 dark:bg-gray-700 h-2"></div>
+<div class="text-gray-500 dark:text-gray-400 flex items-center justify-center rounded-full bg-gray-200 dark:bg-gray-700 w-8 h-8">
+<span class="material-symbols-outlined text-xl">home_pin</span>
+</div>
+</div>
+<div class="flex flex-1 flex-col pt-3 pb-5">
+<p class="text-gray-500 dark:text-gray-400 text-base font-medium leading-normal">Delivered</p>
+</div>
+</div>
+<!-- Divider -->
+<div class="px-4">
+<hr class="border-gray-200 dark:border-gray-200/10"/>
+</div>
+<!-- Delivery Agent Info -->
+<div class="flex items-center gap-4 bg-background-light dark:bg-background-dark px-4 min-h-[72px] py-4 justify-between">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-14" data-alt="Profile picture of Kofi Mensah, the courier" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB3zegzqo6KrVH74_S5NwwI6FNqGb_uM7guu_YCJQvjKcZwS-ztFLdmBzPyw81rmQbKqNCdckciE8XRhV4T8v9ZPOFf2yGBoK54RbjPCpnY4d6VC2wVm1guHOQfKhZoQm0c2EcAsA-vodPQRWYtO85uIkqXG5avYWqVJGjh-L137g-oO5R7wZJOTj1GHhClI_guONvpEhuoHykx4MD6FnmI0nbwviWdFiXK_eADT0jqjqlDA_sn4OZObxMZTfufsx9elHamvKOHg3yI");'></div>
+<div class="flex flex-col justify-center">
+<p class="text-gray-900 dark:text-white text-base font-medium leading-normal line-clamp-1">Kofi Mensah</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal line-clamp-2">4.8 Star Rating</p>
+</div>
+</div>
+<div class="shrink-0 flex items-center gap-2">
+<button class="flex items-center justify-center h-12 w-12 rounded-full bg-gray-200 dark:bg-white/10 text-gray-900 dark:text-white">
+<span class="material-symbols-outlined text-2xl">chat</span>
+</button>
+<button class="flex items-center justify-center h-12 w-12 rounded-full bg-primary text-background-dark">
+<span class="material-symbols-outlined text-2xl">call</span>
+</button>
+</div>
+</div>
+</div>
+</body></html>

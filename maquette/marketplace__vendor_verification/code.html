@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vendor Rating System</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#eea62b",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#221b10",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="flex-grow">
+<!-- Profile Header -->
+<div class="flex p-4 @container">
+<div class="flex w-full flex-col gap-4 @[520px]:flex-row @[520px]:justify-between @[520px]:items-center">
+<div class="flex gap-4 items-center">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-24 w-24" data-alt="Abstract gradient profile picture" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDbz6WZuk0fFRHijciqGPBSCHQdmdmLei7BXtbSKD_GxxBQO_IfvZripAwkcVUEz8i4RohaW1-HeaHhKh-j4A0pTwOEHX_UPR4uk1Mh_7lb53rfeTjATaraqnprOiNFNpK9DKgF7iqPQwPsaP0D408unwA1TDRo5snD9ZM0lusrDBwWkF9q75sKLejAvEzGmlYw6IZSDyF25ziGWUTZvjZ5tCYBAKNtRKwtaj-H3Aad8yi4NTkibH3ycqrgNBm5myzlUm0jJR_orYGo");'></div>
+<div class="flex flex-col justify-center">
+<p class="text-slate-900 dark:text-white text-xl font-bold leading-tight tracking-[-0.015em]">SokoFresh Produce</p>
+<div class="flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[#00B589] text-lg">verified</span>
+<p class="text-[#00B589] text-base font-bold leading-normal">Verified Partner</p>
+<div class="relative group">
+<span class="material-symbols-outlined text-slate-500 dark:text-slate-400 text-lg cursor-pointer ml-1">info</span>
+<div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-max max-w-xs p-2.5 text-xs font-medium text-white bg-slate-800 dark:bg-slate-900 rounded-lg shadow-sm opacity-0 group-hover:opacity-100 transition-opacity">
+                                        Business documents checked &amp; identity confirmed.
+                                        <div class="absolute left-1/2 -translate-x-1/2 top-full w-0 h-0 border-x-4 border-x-transparent border-t-4 border-t-slate-800 dark:border-t-slate-900"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Rating Summary -->
+<div class="flex flex-wrap gap-x-8 gap-y-6 p-4">
+<div class="flex flex-col gap-2">
+<p class="text-slate-900 dark:text-white text-4xl font-black leading-tight tracking-[-0.033em]">4.8</p>
+<div class="flex gap-0.5">
+<span class="material-symbols-outlined text-primary">star</span>
+<span class="material-symbols-outlined text-primary">star</span>
+<span class="material-symbols-outlined text-primary">star</span>
+<span class="material-symbols-outlined text-primary">star</span>
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 0, 'wght' 400;">star</span>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-base font-normal leading-normal">1,2k Reviews</p>
+</div>
+<div class="grid min-w-[200px] max-w-[400px] flex-1 grid-cols-[20px_1fr_40px] items-center gap-y-3">
+<p class="text-slate-900 dark:text-white text-sm font-normal leading-normal">5</p>
+<div class="flex h-2 flex-1 overflow-hidden rounded-full bg-slate-200 dark:bg-slate-700">
+<div class="rounded-full bg-primary" style="width: 85%;"></div>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal text-right">85%</p>
+<p class="text-slate-900 dark:text-white text-sm font-normal leading-normal">4</p>
+<div class="flex h-2 flex-1 overflow-hidden rounded-full bg-slate-200 dark:bg-slate-700">
+<div class="rounded-full bg-primary" style="width: 9%;"></div>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal text-right">9%</p>
+<p class="text-slate-900 dark:text-white text-sm font-normal leading-normal">3</p>
+<div class="flex h-2 flex-1 overflow-hidden rounded-full bg-slate-200 dark:bg-slate-700">
+<div class="rounded-full bg-primary" style="width: 4%;"></div>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal text-right">4%</p>
+<p class="text-slate-900 dark:text-white text-sm font-normal leading-normal">2</p>
+<div class="flex h-2 flex-1 overflow-hidden rounded-full bg-slate-200 dark:bg-slate-700">
+<div class="rounded-full bg-primary" style="width: 1%;"></div>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal text-right">1%</p>
+<p class="text-slate-900 dark:text-white text-sm font-normal leading-normal">1</p>
+<div class="flex h-2 flex-1 overflow-hidden rounded-full bg-slate-200 dark:bg-slate-700">
+<div class="rounded-full bg-primary" style="width: 1%;"></div>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal text-right">1%</p>
+</div>
+</div>
+<!-- See All Reviews Link -->
+<a class="text-primary text-sm font-bold leading-normal pb-3 pt-1 px-4 inline-block" href="#">See all reviews</a>
+<!-- Featured Review Section -->
+<div class="border-t border-slate-200 dark:border-slate-800">
+<h3 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Featured Review</h3>
+<div class="p-4 @container">
+<div class="flex flex-col items-stretch justify-start rounded-xl bg-slate-100 dark:bg-slate-800/50 p-4">
+<div class="flex flex-col items-stretch justify-center gap-1">
+<div class="flex items-center justify-between">
+<p class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Amazing Service!</p>
+<div class="flex items-center gap-0.5">
+<span class="material-symbols-outlined text-primary text-base">star</span>
+<span class="material-symbols-outlined text-primary text-base">star</span>
+<span class="material-symbols-outlined text-primary text-base">star</span>
+<span class="material-symbols-outlined text-primary text-base">star</span>
+<span class="material-symbols-outlined text-primary text-base">star</span>
+</div>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal mt-1">Aisha B. - 2 days ago</p>
+<p class="text-slate-600 dark:text-slate-300 text-base font-normal leading-normal mt-2">
+                                This vendor is incredibly reliable and the quality is top-notch. Highly recommended for anyone in the area.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body></html>

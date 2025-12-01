@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Product Categories</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill-1 {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#eea62b",
+              "background-light": "#f8f7f6",
+              "background-dark": "#221b10",
+              "card": {
+                "light": "#ffffff",
+                "dark": "#2a2216"
+              },
+              "text": {
+                "light": "#1c1917",
+                "dark": "#e7e5e4"
+              },
+              "muted": {
+                "light": "#78716c",
+                "dark": "#a8a29e"
+              }
+            },
+            fontFamily: {
+              "display": ["Plus Jakarta Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex min-h-screen w-full flex-col">
+<!-- Main Content -->
+<main class="flex-1 pb-24">
+<!-- Top App Bar -->
+<div class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10">
+<div class="flex size-12 shrink-0 items-center">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</div>
+<h2 class="flex-1 text-lg font-bold leading-tight tracking-[-0.015em] text-center">All Categories</h2>
+<div class="flex w-12 items-center justify-end">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 bg-transparent gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+<span class="material-symbols-outlined text-2xl">search</span>
+</button>
+</div>
+</div>
+<!-- Search Bar -->
+<div class="px-4 py-3">
+<label class="flex flex-col min-w-40 h-12 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-xl h-full">
+<div class="flex items-center justify-center pl-4 rounded-l-xl border-r-0 bg-background-light/50 dark:bg-white/10 text-muted-light dark:text-muted-dark">
+<span class="material-symbols-outlined text-2xl">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-xl text-text-light dark:text-text-dark focus:outline-0 focus:ring-0 border-none bg-background-light/50 dark:bg-white/10 focus:border-none h-full placeholder:text-muted-light dark:placeholder:text-muted-dark px-4 pl-2 text-base font-normal leading-normal" placeholder="What are you looking for?" value=""/>
+</div>
+</label>
+</div>
+<!-- Promotional Banner Card -->
+<div class="p-4">
+<div class="flex items-stretch justify-between gap-4 rounded-xl bg-card-light dark:bg-card-dark p-4 border border-stone-200 dark:border-stone-800">
+<div class="flex flex-[2_2_0px] flex-col gap-4">
+<div class="flex flex-col gap-1">
+<p class="text-base font-bold leading-tight">Free Delivery on All Electronics</p>
+<p class="text-sm font-normal leading-normal text-muted-light dark:text-muted-dark">Limited time offer, shop now!</p>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-primary text-white text-sm font-medium leading-normal w-fit">
+<span class="truncate">Shop Now</span>
+</button>
+</div>
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl flex-1" data-alt="A modern set of black wireless headphones" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBRYtk-uAfSbuEVftqL6EYCq0t_B8AatWrpY8QPNdm15vz5ogh2R6D3x3Y7jU2XUNM6Mcm3aAreyyrOpaLlXSyiF0IOYDgF27LgVZ7oUQMuM173nS90CjSQ0A2ls4KBFwJuTgSmJHk6jRkzU8Y2yD3xLbEAC90B79BFibcToDdSYNyYWAbUzmuHP7P4RDXFwuQ-Rn4zUDM5p_oMBvZSMrDIQmpdqUPBHIiUKsMPrbiT4fyE3BY7OX5wbBkaueRHNbRAvuzeqGdKSKwA");'></div>
+</div>
+</div>
+<!-- Category Grid -->
+<div class="grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] gap-3 p-4">
+<div class="flex flex-1 gap-3 rounded-xl border border-stone-200 dark:border-stone-800 bg-card-light dark:bg-card-dark p-4 flex-col">
+<span class="material-symbols-outlined text-2xl text-primary">styler</span>
+<div class="flex flex-col gap-1 mt-2">
+<h2 class="text-base font-bold leading-tight">Fashion &amp; Apparel</h2>
+<p class="text-sm font-normal leading-normal text-muted-light dark:text-muted-dark">1,200+ items</p>
+</div>
+</div>
+<div class="flex flex-1 gap-3 rounded-xl border border-stone-200 dark:border-stone-800 bg-card-light dark:bg-card-dark p-4 flex-col">
+<span class="material-symbols-outlined text-2xl text-primary">devices</span>
+<div class="flex flex-col gap-1 mt-2">
+<h2 class="text-base font-bold leading-tight">Electronics &amp; Gadgets</h2>
+<p class="text-sm font-normal leading-normal text-muted-light dark:text-muted-dark">850+ items</p>
+</div>
+</div>
+<div class="flex flex-1 gap-3 rounded-xl border border-stone-200 dark:border-stone-800 bg-card-light dark:bg-card-dark p-4 flex-col">
+<span class="material-symbols-outlined text-2xl text-primary">countertops</span>
+<div class="flex flex-col gap-1 mt-2">
+<h2 class="text-base font-bold leading-tight">Home &amp; Kitchen</h2>
+<p class="text-sm font-normal leading-normal text-muted-light dark:text-muted-dark">2,500+ items</p>
+</div>
+</div>
+<div class="flex flex-1 gap-3 rounded-xl border border-stone-200 dark:border-stone-800 bg-card-light dark:bg-card-dark p-4 flex-col">
+<span class="material-symbols-outlined text-2xl text-primary">shopping_cart</span>
+<div class="flex flex-col gap-1 mt-2">
+<h2 class="text-base font-bold leading-tight">Groceries &amp; Essentials</h2>
+<p class="text-sm font-normal leading-normal text-muted-light dark:text-muted-dark">5,000+ items</p>
+</div>
+</div>
+<div class="flex flex-1 gap-3 rounded-xl border border-stone-200 dark:border-stone-800 bg-card-light dark:bg-card-dark p-4 flex-col">
+<span class="material-symbols-outlined text-2xl text-primary">health_and_safety</span>
+<div class="flex flex-col gap-1 mt-2">
+<h2 class="text-base font-bold leading-tight">Health &amp; Beauty</h2>
+<p class="text-sm font-normal leading-normal text-muted-light dark:text-muted-dark">900+ items</p>
+</div>
+</div>
+<div class="flex flex-1 gap-3 rounded-xl border border-stone-200 dark:border-stone-800 bg-card-light dark:bg-card-dark p-4 flex-col">
+<span class="material-symbols-outlined text-2xl text-primary">child_care</span>
+<div class="flex flex-col gap-1 mt-2">
+<h2 class="text-base font-bold leading-tight">Baby &amp; Kids</h2>
+<p class="text-sm font-normal leading-normal text-muted-light dark:text-muted-dark">450+ items</p>
+</div>
+</div>
+<div class="flex flex-1 gap-3 rounded-xl border border-stone-200 dark:border-stone-800 bg-card-light dark:bg-card-dark p-4 flex-col">
+<span class="material-symbols-outlined text-2xl text-primary">menu_book</span>
+<div class="flex flex-col gap-1 mt-2">
+<h2 class="text-base font-bold leading-tight">Books &amp; Media</h2>
+<p class="text-sm font-normal leading-normal text-muted-light dark:text-muted-dark">3,100+ items</p>
+</div>
+</div>
+<div class="flex flex-1 gap-3 rounded-xl border border-stone-200 dark:border-stone-800 bg-card-light dark:bg-card-dark p-4 flex-col">
+<span class="material-symbols-outlined text-2xl text-primary">brush</span>
+<div class="flex flex-col gap-1 mt-2">
+<h2 class="text-base font-bold leading-tight">Artisanal &amp; Local Crafts</h2>
+<p class="text-sm font-normal leading-normal text-muted-light dark:text-muted-dark">300+ items</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Bar -->
+<div class="fixed bottom-0 left-0 right-0 w-full">
+<div class="flex gap-2 border-t border-stone-200 dark:border-stone-800 bg-background-light dark:bg-background-dark px-4 pb-3 pt-2">
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-muted-light dark:text-muted-dark" href="#">
+<span class="material-symbols-outlined flex h-8 items-center justify-center text-2xl">home</span>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">Home</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 rounded-full text-primary" href="#">
+<span class="material-symbols-outlined fill-1 flex h-8 items-center justify-center text-2xl">storefront</span>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">Shop</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-muted-light dark:text-muted-dark" href="#">
+<span class="material-symbols-outlined flex h-8 items-center justify-center text-2xl">local_shipping</span>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">Delivery</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-muted-light dark:text-muted-dark" href="#">
+<span class="material-symbols-outlined flex h-8 items-center justify-center text-2xl">account_balance_wallet</span>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">Wallet</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-muted-light dark:text-muted-dark" href="#">
+<span class="material-symbols-outlined flex h-8 items-center justify-center text-2xl">more_horiz</span>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">More</p>
+</a>
+</div>
+</div>
+</div>
+</body></html>

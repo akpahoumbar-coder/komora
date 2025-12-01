@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Monthly Leaderboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#ff9f43", // Warm, energetic orange
+              "primary-darker": "#e67e22", // A darker shade for hover/active
+              "background-light": "#f6f7f8", // Sandy beige
+              "background-dark": "#101922", // Deep charcoal
+              "card-light": "#ffffff",
+              "card-dark": "#192633", // Slightly lighter than background
+              "text-light-primary": "#2d3436",
+              "text-light-secondary": "#636e72",
+              "text-dark-primary": "#dfe6e9",
+              "text-dark-secondary": "#b2bec3",
+              "gold": "#FFD700",
+              "silver": "#C0C0C0",
+              "bronze": "#CD7F32",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col">
+<!-- Top App Bar -->
+<div class="flex items-center p-4 pb-2 bg-background-light dark:bg-background-dark sticky top-0 z-10">
+<div class="flex size-10 shrink-0 items-center justify-center text-text-light-primary dark:text-dark-primary">
+<span class="material-symbols-outlined text-3xl">arrow_back</span>
+</div>
+<h1 class="text-xl font-bold leading-tight flex-1 text-center text-text-light-primary dark:text-dark-primary">Monthly Leaderboard</h1>
+<div class="flex size-10 shrink-0 items-center"></div>
+</div>
+<!-- Chips / Month Selector -->
+<div class="flex gap-3 px-4 pt-2 pb-4">
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-card-light dark:bg-card-dark pl-4 pr-3 shadow-sm">
+<p class="text-text-light-primary dark:text-dark-primary text-sm font-medium leading-normal">June 2024</p>
+<div class="text-text-light-secondary dark:text-dark-secondary">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</button>
+</div>
+<!-- Leaderboard Cards -->
+<main class="flex flex-col gap-4 px-4 pb-8">
+<!-- 1st Place Card -->
+<div class="flex flex-col items-center justify-start rounded-xl shadow-lg bg-card-light dark:bg-card-dark border-2 border-primary">
+<div class="relative w-full p-6 flex flex-col items-center text-center">
+<div class="absolute top-[-16px] flex items-center justify-center">
+<span class="material-symbols-outlined text-gold text-4xl" style="font-variation-settings: 'FILL' 1;">emoji_events</span>
+</div>
+<img class="w-24 h-24 rounded-full object-cover border-4 border-primary mb-4" data-alt="Profile picture of Amara Diallo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBz9uPQI617TAJBYzATv0679i5fGlUK95mhxI2iYfWi-_PcnrR0HeY7mmeVe2Rp4mdkY6H6EF2ulLittplOGsM3KMEGMklAG0rIcayZiHWHWdTb5HFJd_lxPRwM5V2b1TKiKaxNF-7jPdl-TKBxaiIKgJPnZ1P2vAg_Q3ixfU84tIYhIjzNKHcfdv_O1GP1Zg-04UjNNf5HUbagrL6mm7F1szww0JpLYT1KYaYmQu7FXzh5Fr3yTUYgCOPnrLaU2xiqprcMn6C4PPyH"/>
+<p class="text-primary text-sm font-semibold leading-normal">1st Place</p>
+<p class="text-text-light-primary dark:text-dark-primary text-xl font-bold leading-tight tracking-tight mt-1">Amara Diallo</p>
+</div>
+<div class="w-full flex items-center justify-around border-t border-slate-200 dark:border-slate-700 py-4 px-2">
+<div class="flex flex-col items-center gap-1 text-center">
+<span class="material-symbols-outlined text-primary text-2xl">paid</span>
+<p class="text-text-light-secondary dark:text-dark-secondary text-xs">Earnings</p>
+<p class="text-text-light-primary dark:text-dark-primary text-base font-semibold">$5,400</p>
+</div>
+<div class="flex flex-col items-center gap-1 text-center">
+<span class="material-symbols-outlined text-primary text-2xl">group_add</span>
+<p class="text-text-light-secondary dark:text-dark-secondary text-xs">Referrals</p>
+<p class="text-text-light-primary dark:text-dark-primary text-base font-semibold">120</p>
+</div>
+<div class="flex flex-col items-center gap-1 text-center">
+<span class="material-symbols-outlined text-primary text-2xl">monitoring</span>
+<p class="text-text-light-secondary dark:text-dark-secondary text-xs">Sales</p>
+<p class="text-text-light-primary dark:text-dark-primary text-base font-semibold">$12,850</p>
+</div>
+</div>
+</div>
+<!-- 2nd Place Card -->
+<div class="flex items-center justify-between gap-4 rounded-xl bg-card-light dark:bg-card-dark p-4 shadow-md border border-slate-200 dark:border-slate-700">
+<div class="flex flex-col gap-1 flex-[2_2_0px]">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-silver" style="font-variation-settings: 'FILL' 1;">emoji_events</span>
+<p class="text-text-light-secondary dark:text-dark-secondary text-sm font-medium leading-normal">2nd Place</p>
+</div>
+<p class="text-text-light-primary dark:text-dark-primary text-lg font-bold leading-tight">Jelani Adebayo</p>
+<p class="text-text-light-secondary dark:text-dark-secondary text-sm font-normal leading-normal mt-1">Earnings: $4,250</p>
+</div>
+<img class="w-16 h-16 rounded-full object-cover border-2 border-silver flex-shrink-0" data-alt="Profile picture of Jelani Adebayo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbWiCR9bED2q1Umpfx0EOWjnjxfEIn_0tg-hV3dSaQ9EMx9lnQBI5TwEpb8g1aa2qB3D67j8fmqpQNwNJkzK8gCpse22dWVQgLy7fff9oAhmgVfCcIy4RwIdEr4wiqw1O-ScB5Ltys6FbT-PauQqaT9dKZJzjDfQ1CIWQH_ADcrQfokoUvTzoLopw0GJXfQlF7jp4Qki5nc_BXE04xcTZYyPyB9IPnqMLgKBAjGMOEFsYmbkxkU_scy2ckLQjSMOVTMaaZGvVx2DC9"/>
+</div>
+<!-- 3rd Place Card -->
+<div class="flex items-center justify-between gap-4 rounded-xl bg-card-light dark:bg-card-dark p-4 shadow-md border border-slate-200 dark:border-slate-700">
+<div class="flex flex-col gap-1 flex-[2_2_0px]">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-bronze" style="font-variation-settings: 'FILL' 1;">emoji_events</span>
+<p class="text-text-light-secondary dark:text-dark-secondary text-sm font-medium leading-normal">3rd Place</p>
+</div>
+<p class="text-text-light-primary dark:text-dark-primary text-lg font-bold leading-tight">Fatima Zahra</p>
+<p class="text-text-light-secondary dark:text-dark-secondary text-sm font-normal leading-normal mt-1">Earnings: $3,800</p>
+</div>
+<img class="w-16 h-16 rounded-full object-cover border-2 border-bronze flex-shrink-0" data-alt="Profile picture of Fatima Zahra" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpRoE9sqJR18tCHlSHjUnmIJNjoUFmtKFtsvBf6iEHTfZDfzyv6VZbdJ-gMHokV4ecJBNSoRN7MC2vBcKXPBJ7bwvpM1_zw6LnHxo8Njvu5qXI_YY_FGZEBwaHD49oMKZF_MhPY4ND_01SRLqDMZeqdxsEeEnrrBSuybUnM_AssnguiSBVvWWT1arvwCzT3t_5xcvjuwon_zo_j31NMVIzZXtathJNJoHBDMBgPF21x1ePRgg-u070C7frePCVOSfE6pvd_xB6K6pt"/>
+</div>
+</main>
+<!-- Footer CTA -->
+<div class="px-4 py-4 mt-auto">
+<button class="w-full flex h-12 items-center justify-center gap-x-2 rounded-lg bg-primary-darker hover:bg-primary transition-colors">
+<p class="text-white text-base font-semibold leading-normal">View Full Leaderboard</p>
+</button>
+<p class="text-center text-sm text-text-light-secondary dark:text-dark-secondary mt-3">Keep climbing! The next spot could be yours.</p>
+</div>
+</div>
+</body></html>

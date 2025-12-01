@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>New Delivery Request</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300,400,500,600&amp;FILL=0..1" rel="stylesheet"/>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      font-size: 24px;
+    }
+  </style>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#ff7a00",
+            "background-light": "#f5f5f5",
+            "background-dark": "#101922",
+            "text-dark": "#222831",
+            "text-light": "#ffffff",
+            "decline-red": "#E53935",
+            "warning-yellow": "#FFC700",
+            "card-light": "#ffffff",
+            "card-dark": "#1c2630",
+            "border-light": "#e0e0e0",
+            "border-dark": "#323d47",
+            "text-muted-light": "#616161",
+            "text-muted-dark": "#9e9e9e",
+          },
+          fontFamily: {
+            "display": ["Inter", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "0.75rem",
+            "xl": "1rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display">
+<div class="relative flex h-screen min-h-screen w-full flex-col bg-background-light dark:bg-background-dark overflow-hidden">
+<!-- Top App Bar -->
+<div class="flex items-center bg-background-light dark:bg-background-dark p-4 justify-between z-20">
+<div class="flex size-10 items-center justify-start text-text-dark dark:text-text-light">
+<span class="material-symbols-outlined">menu</span>
+</div>
+<h2 class="text-text-dark dark:text-text-light text-lg font-bold leading-tight tracking-tight">New Delivery Request</h2>
+<div class="flex w-10 items-center justify-end">
+<button class="flex h-10 w-10 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-transparent text-text-dark dark:text-text-light">
+<span class="material-symbols-outlined">toggle_on</span>
+</button>
+</div>
+</div>
+<!-- Main Content -->
+<div class="relative flex flex-1 flex-col">
+<!-- Map Component -->
+<div class="absolute inset-0 h-full w-full">
+<div class="bg-cover bg-center flex h-full w-full flex-1 flex-col justify-between" data-alt="A dark, stylized map showing a delivery route from a pickup point to a drop-off point with pins." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCk-ORSc62I2VtnmvF-l3L36cgcbPu9vT5IBdT9nmZlbEYcjsPMkW_doB1Jjphm29o_R6yTE1DCUnOPd3-H_FmArlzqzSeoBLPII8oADFFjuJKYqoZ8Q5B168inD9CQEen4g_quORTj-NHKehoQETXuXweM1o2rqLQt7fh1IqKtRmvQ2ngmRJmNMVvjxr-jbInJpBOvq-w3oLUyh2bhrhXQjwHe-xwn4qAGeq7fmTmF51EuL_iU0G562VWkdfw2iz9LDyoBLgvwmHud");'>
+</div>
+</div>
+<!-- Bottom Sheet / Order Details Card -->
+<div class="absolute bottom-0 left-0 flex w-full flex-col justify-end">
+<div class="flex flex-col items-stretch bg-card-light dark:bg-card-dark rounded-t-xl shadow-2xl">
+<!-- Handle -->
+<div class="flex h-5 w-full items-center justify-center pt-3">
+<div class="h-1.5 w-10 rounded-full bg-border-light dark:bg-border-dark"></div>
+</div>
+<!-- Content -->
+<div class="flex flex-col p-4 pt-2">
+<!-- Primary Info -->
+<div class="flex items-baseline justify-between py-2">
+<h1 class="text-warning-yellow tracking-tight text-4xl font-bold leading-tight">$5.50</h1>
+<div class="flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1.5">
+<span class="material-symbols-outlined text-primary text-base">timer</span>
+<p class="text-primary text-sm font-semibold">Accept in 45s</p>
+</div>
+</div>
+<p class="text-text-muted-light dark:text-text-muted-dark text-base font-normal leading-normal pb-4">3.2 km • Est. 15 min</p>
+<!-- Location Details -->
+<div class="flex flex-col gap-4 border-t border-b border-border-light dark:border-border-dark py-4">
+<div class="flex items-start gap-4">
+<div class="flex size-10 items-center justify-center rounded-full bg-primary/10">
+<span class="material-symbols-outlined text-primary">storefront</span>
+</div>
+<div>
+<p class="text-xs font-medium uppercase text-text-muted-light dark:text-text-muted-dark tracking-wider">Pick-up</p>
+<p class="text-text-dark dark:text-text-light font-semibold">Mama's Kitchen - Downtown</p>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">123 Main Street, City Center</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="flex size-10 items-center justify-center rounded-full bg-primary/10">
+<span class="material-symbols-outlined text-primary">person_pin_circle</span>
+</div>
+<div>
+<p class="text-xs font-medium uppercase text-text-muted-light dark:text-text-muted-dark tracking-wider">Drop-off</p>
+<p class="text-text-dark dark:text-text-light font-semibold">J. Doe</p>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">456 Park Avenue, Uptown</p>
+</div>
+</div>
+</div>
+<!-- Package Details & Earnings -->
+<div class="flex justify-between items-center py-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-text-muted-light dark:text-text-muted-dark">lunch_dining</span>
+<p class="text-text-dark dark:text-text-light font-medium">1 Food Bag</p>
+</div>
+<button class="text-primary font-semibold text-sm">Earnings Breakdown</button>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-col gap-3 pt-2">
+<button class="flex w-full items-center justify-center rounded-lg h-14 bg-primary text-white text-lg font-bold leading-normal tracking-wide">
+                Accept Delivery
+              </button>
+<button class="flex w-full items-center justify-center rounded-lg h-14 bg-transparent text-decline-red text-base font-semibold leading-normal">
+                Decline
+              </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body></html>

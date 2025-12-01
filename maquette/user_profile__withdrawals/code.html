@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Withdraw Funds</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#137fec",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101922",
+          },
+          fontFamily: {
+            "display": ["Inter"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      font-size: 24px;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden text-zinc-900 dark:text-white">
+<!-- Top App Bar -->
+<div class="flex items-center p-4 pb-2 justify-between bg-background-light dark:bg-background-dark sticky top-0 z-10">
+<div class="flex size-12 shrink-0 items-center">
+<span class="material-symbols-outlined">arrow_back</span>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Withdraw Funds</h2>
+<div class="flex size-12 shrink-0 items-center justify-end">
+<span class="material-symbols-outlined">help_outline</span>
+</div>
+</div>
+<!-- Main Content -->
+<div class="flex flex-col gap-6 p-4">
+<!-- Balance Card -->
+<div class="flex flex-col items-stretch justify-start rounded-xl bg-white/50 dark:bg-zinc-800/20">
+<div class="flex w-full grow flex-col items-stretch justify-center gap-1 p-4">
+<p class="text-zinc-600 dark:text-zinc-400 text-sm font-normal leading-normal">Available for Withdrawal</p>
+<p class="text-3xl font-bold leading-tight tracking-[-0.015em]">$1,250.00</p>
+</div>
+</div>
+<!-- Amount Input Field -->
+<label class="flex flex-col min-w-40 flex-1">
+<p class="text-base font-medium leading-normal pb-2">Amount</p>
+<div class="flex w-full flex-1 items-stretch rounded-lg bg-zinc-100 dark:bg-zinc-800/40">
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-lg font-bold focus:outline-0 focus:ring-2 focus:ring-primary border-none bg-transparent h-16 placeholder:text-zinc-500 dark:placeholder:text-zinc-400 p-4 rounded-r-none border-r-0 pr-2 leading-normal" placeholder="$0.00" value=""/>
+<button class="flex items-center justify-center pr-4 rounded-r-lg">
+<span class="text-primary font-bold text-sm">MAX</span>
+</button>
+</div>
+</label>
+<!-- Withdrawal Method Selector -->
+<div>
+<p class="text-base font-medium leading-normal pb-2">Withdraw to</p>
+<div class="flex items-center gap-4 bg-zinc-100 dark:bg-zinc-800/40 rounded-lg min-h-[72px] px-4 py-2 justify-between">
+<div class="flex items-center gap-4">
+<div class="flex items-center justify-center rounded-lg bg-primary/20 text-primary shrink-0 size-12">
+<span class="material-symbols-outlined">account_balance</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-base font-medium leading-normal line-clamp-1">Bank Account</p>
+<p class="text-zinc-600 dark:text-zinc-400 text-sm font-normal leading-normal line-clamp-2">.... 4567</p>
+</div>
+</div>
+<div class="shrink-0">
+<div class="flex size-7 items-center justify-center">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Summary & Fees Breakdown -->
+<div class="p-4 rounded-xl bg-white/50 dark:bg-zinc-800/20 flex flex-col gap-2">
+<div class="flex justify-between gap-x-6 py-1.5">
+<p class="text-zinc-600 dark:text-zinc-400 text-sm font-normal leading-normal">Withdrawal Amount</p>
+<p class="text-sm font-medium leading-normal text-right">$150.00</p>
+</div>
+<div class="flex justify-between gap-x-6 py-1.5">
+<p class="text-zinc-600 dark:text-zinc-400 text-sm font-normal leading-normal">Transaction Fee</p>
+<p class="text-sm font-medium leading-normal text-right">$2.50</p>
+</div>
+<div class="flex justify-between gap-x-6 py-1.5">
+<p class="text-zinc-600 dark:text-zinc-400 text-sm font-normal leading-normal">Processing Time</p>
+<p class="text-sm font-medium leading-normal text-right">1-2 Business Days</p>
+</div>
+<div class="my-2 border-t border-zinc-200 dark:border-zinc-700"></div>
+<div class="flex justify-between gap-x-6 py-1.5">
+<p class="text-zinc-600 dark:text-zinc-400 text-sm font-bold leading-normal">You Will Receive</p>
+<p class="text-sm font-bold leading-normal text-right">$147.50</p>
+</div>
+</div>
+</div>
+<!-- Footer with CTA and Security Notice -->
+<div class="sticky bottom-0 mt-auto flex flex-col gap-4 bg-background-light dark:bg-background-dark p-4 pt-2">
+<button class="flex w-full items-center justify-center rounded-xl bg-primary px-6 py-4 text-center text-base font-bold text-white shadow-sm hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 disabled:bg-zinc-300 dark:disabled:bg-zinc-700 dark:disabled:text-zinc-500">
+        Continue
+      </button>
+<div class="flex items-center justify-center gap-2 text-center">
+<span class="material-symbols-outlined text-zinc-500 dark:text-zinc-400 text-sm" style="font-size: 16px;">lock</span>
+<p class="text-xs text-zinc-500 dark:text-zinc-400">Your transactions are secured with end-to-end encryption.</p>
+</div>
+</div>
+</div>
+</body></html>

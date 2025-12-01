@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AI Voice Assistant</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#137fec",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101922",
+              "midnight-indigo": "#1A1A2E",
+              "accent-gold": "#F4C430",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {
+              "DEFAULT": "0.25rem",
+              "lg": "0.5rem",
+              "xl": "0.75rem",
+              "full": "9999px"
+            },
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24;
+            font-size: 24px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display">
+<div class="relative flex h-screen w-full flex-col bg-midnight-indigo dark group/design-root overflow-hidden">
+<!-- Top App Bar -->
+<div class="flex items-center p-4 justify-between absolute top-0 left-0 right-0 z-10">
+<div class="flex size-12 shrink-0 items-center">
+<!-- Placeholder for logo or back button if needed -->
+</div>
+<div class="flex w-12 items-center justify-end">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 w-10 bg-white/10 text-white gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+</div>
+<!-- Main Content Area -->
+<div class="flex flex-col flex-grow justify-between px-4 pt-20 pb-6">
+<!-- AI Response Area -->
+<div class="flex flex-col items-center justify-center text-center flex-grow">
+<!-- Headline Text -->
+<h2 class="text-white tracking-light text-[28px] font-bold leading-tight text-center">How can I help you today?</h2>
+</div>
+<!-- Waveform and Controls -->
+<div class="flex flex-col items-center gap-4">
+<!-- Dynamic Waveform Visualizer (Image Placeholder) -->
+<div class="flex w-full max-w-sm grow items-center justify-center py-3">
+<div class="w-full gap-1 overflow-hidden @[480px]:gap-2 aspect-[16/5] flex">
+<div class="w-full bg-center bg-no-repeat bg-cover aspect-auto flex-1" data-alt="A vibrant, multi-colored waveform animation representing voice input, with gradients of sunset orange, terracotta, and turquoise on a dark background." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBuj-9RbnaXPJj1gQf0Qth0_2f8yu2OgRC5jorO8nl5aXsqUIQnQR4oxPYc-1ehukoXloLMU1i29k1qhkR0CUXkVgkNtA0l5BCUwFTiKFE0SvdX4b14XUj_k5PZofEHrh5G3NpqM_Niwxx2a5pO7y74nYXpz4QzyN5XW3JDiyLEItAAOCEe6dff8VK9peye6QsRyLDVRlxeuj6zrBFHIKbbCaaWFAfG8aR1WCw1hwuVhbIrwG2wI5hlqUUGaO-0nI6c1pUWmujepU_w");'></div>
+</div>
+</div>
+<!-- Status Text -->
+<p class="text-white/70 text-base font-normal leading-normal text-center">Listening...</p>
+<!-- FAB / Microphone Button -->
+<div class="flex justify-center overflow-hidden pt-4">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-20 w-20 bg-accent-gold text-midnight-indigo text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-4 shadow-lg shadow-accent-gold/20">
+<span class="material-symbols-outlined !text-4xl">mic</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</body></html>
